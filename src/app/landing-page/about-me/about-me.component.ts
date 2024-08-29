@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppDataServiceComponent } from '../../app-data-service/app-data-service.component';
 
 @Component({
   selector: 'app-about-me',
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './about-me.component.scss'
 })
 export class AboutMeComponent {
-
+  personalInformation = this.appDataService.personalInformation;
+constructor(private appDataService: AppDataServiceComponent){
+}
 }

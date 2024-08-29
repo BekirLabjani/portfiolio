@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: #141d2f;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  padding-top: 110px;
+  position: relative;
+  background-color: #141d2f;
+  font-family: "Poppins";
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.curve-images {
+  width: 100%;
+  position: absolute;
+  top: 235px;
+  z-index: 2;
+}
+
+.my-images {
+  width: 646px;
+  height: 705px;
+  margin-left: 47px;
+  position: relative;
+}
+
+.img-one {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  object-fit: contain;
+}
+
+.img-two {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.my-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 44px;
+  color: #fff;
+  z-index: 4;
+  margin-right: 100px;
+}
+
+.inside {
+  display: flex;
+  align-items: center;
+}
+
+.headline-left-side {
+  transform: rotate(-90deg);
+  width: 152px;
+  height: 63px;
+}
+.headline-left-side > span {
+  font-size: 64px;
+}
+
+.headline-right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.headline-right-side > .headline-name {
+  font-size: 90px;
+  font-weight: 700;
+}
+
+.activities {
+  color: #9747ff;
+  font-size: 58px;
+}
+
+.headline-name {
+  font-size: 64px;
+}
+
+button {
+  background-color: #70e61c;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  font-size: 23px;
+  transition: scale 0.1s;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  scale: 1.2;
+  color: white;
+  background-color: #9747ff;
+}
+
+.buttom-links {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  position: absolute;
+  bottom: 130px;
+  left: 0;
+}
+.buttom-links > a {
+  text-decoration: none;
+  color: #fff;
+  z-index: 5;
+  height: 30px;
+  font-size: 23px;
+}
+
+.desing-line {
+  width: 100px;
+  height: 3px;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #9747ff;
+  border: none;
+  z-index: 4;
+}

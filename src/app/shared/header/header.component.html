@@ -1,19 +1,37 @@
 <section>
-    <div class="logo-container">
-        <div class="name-logo">
-            <span class="letter">B</span>
-            <span class="letter">e</span>
-            <span class="letter">k</span>
-            <span>i</span> 
-            <span class="letter special">r</span>
-        </div>
+  <div class="logo-container">
+    <div class="name-logo">
+      <span class="letter">B</span>
+      <span class="letter">e</span>
+      <span class="letter">k</span>
+      <span>i</span>
+      <span class="letter special">r</span>
     </div>
-        
-        <div class="menu-links">
-           <div class="header-button"> <a href="http://" class="my-links">About me</a></div>
-            <div class="header-button"><a href="http://" class="my-links">Skills</a></div>
-           <div class="header-button"> <a href="http://" class="my-links">Portfolio</a></div>
-        </div>
-        <div class="burger-menu d-None"></div>
+  </div>
+
+  <div class="menu-links">
+    <!-- <div class="header-button">
+      <a href="#about-me" class="my-links">About me</a>
+      <div class="purpel-line-active"></div>
+    </div>
+    <div class="header-button">
+      <a href="#skill" class="my-links">Skills</a>
+      <div class="purpel-line-active"></div>
+    </div>
+    <div class="header-button">
+      <a href="#portfolio" class="my-links">Portfolio</a>
+      <div class="purpel-line-active"></div>
+    </div> -->
+    <div
+      *ngFor="let menu of myContentLinks; let i = index"
+      class="header-button"
+      (click)="setActiveLink(i)"
+    >
+      <a [href]="menu.linkComponent" class="my-links">
+        {{ menu.title }}
+      </a>
+      <div *ngIf="activeLinkIndex === i" class="purpel-line-active"></div>
+    </div>
+  </div>
+  <div class="burger-menu d-None"></div>
 </section>
-  

@@ -1,1 +1,31 @@
-<p>about-me works!</p>
+<section id="about-me">
+  <div class="about-me-container">
+    <div class="me">
+      <span>About me</span>
+      <p>
+        Hi, I am a Front-end developer based in Lingen, Germany. I love to learn
+        new tech-related things.
+      </p>
+      @for (information of personalInformation; track $index) {
+        <div class="infos">
+          <img src="assets/img/icons/about-me-icons/{{information.path}}.png" alt="" />
+          <p>
+            {{information.text}}
+          </p>
+        </div>
+      }
+    </div>
+    <div class="img-from-me">
+      <div class="green-circle">
+        <img src="assets/img/myImages.png" alt="" />
+      </div>
+      <div class="green-line"></div>
+    </div>
+  </div>
+
+  <!-- <img
+    class="about-me-bgc"
+    src="assets/img/background/30. Purple shadow about me.png"
+    alt=""
+  /> -->
+</section>

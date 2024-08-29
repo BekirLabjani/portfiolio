@@ -1,0 +1,128 @@
+section {
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 175px;
+    padding-top: 278px;
+    position: relative;
+}
+
+.dNone{
+    display: none;
+}
+.contact-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 571px;
+    gap: 57px;
+}
+.my-skills-right{
+    display: flex;
+    gap: 42px;
+
+    >div {
+        >p {
+            margin: 0;
+            color: white;
+        }
+    }
+
+}
+
+.skills {
+    width: 721px;
+    display: flex;
+    flex-direction: column;
+}
+.skills-flex-row{
+    display: flex;
+    width: 844px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.icon-box {
+    padding-right: 123px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    align-items: center;
+    width: 88px;
+    padding-bottom: 54px;
+
+    >img {
+        height: 60px;
+        width: 60px;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+
+        &:hover {
+            animation-name: bounce;
+            -moz-animation-name: bounce;
+        }
+    }
+
+    >p {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 700;
+        color: white;
+    }
+}
+
+
+.button {
+    background-color: #70E61C;
+    border-radius: 10px;
+    padding: 15px 30px 15px 30px;
+    border: none;
+    color: white;
+    font-size: 23px;
+    transition: scale 0.1s;
+    text-decoration: none;
+    z-index: 1;
+
+    &:hover {
+        background-color: #9747FF;
+        scale: 1.2;
+        cursor: pointer;
+    }
+}
+
+
+.my-skills-headline {
+    font-size: 90px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.my-skills-description {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+}
+
+.purple-line{
+    margin-top: 70px;
+    background-color: #9747FF;
+    width: 58px;
+    height: 4px;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.bgc-green {
+    position: absolute;
+    transform: rotateX(180deg);
+    top: 250px;
+    left: 0;
+    z-index: 0;
+}

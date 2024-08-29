@@ -1,1 +1,27 @@
-<p>my-skills works!</p>
+<section id="#skill">
+    <img class="bgc-green" src="assets/img/background/Green shadow 2.png" alt="">
+    <div class="mobile-skills-version dNone"></div>
+    <div class="skills">
+        <div class="skills-flex-row">
+            @for (icons of mySkills; track $index) {
+                <div class="icon-box">
+                    <img src="./assets/img/icons/my-skills-icon/{{icons.path}}.png">
+                    <p>{{ icons.name }}</p>
+                </div>
+                }
+        </div>
+    </div>
+    <div class="contact-container">
+        <div>
+            <div class="my-skills-right">
+                <div>
+                    <p class="my-skills-headline">My skills</p>
+                    <p class="my-skills-description">I have gained experience in building projects with various front end technologies and concepts.</p>
+                </div>
+                <div class="purple-line"></div>
+            </div>
+        </div>
+        <a class="button" href="#contact">{{ "myskills-button" }}</a>
+    </div>
+    <!-- <a class="mobile-button" href="#contact">{{ "myskills-button" }}</a> -->
+</section>
