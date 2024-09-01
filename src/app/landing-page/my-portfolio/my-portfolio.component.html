@@ -1,1 +1,26 @@
-<p>my-portfolio works!</p>
+<section>
+    <div class="portfolio-headline-container">
+        <div class="portfolio-headline">
+            <div class="short-line-container">
+                <div class="purple-line-short"></div>
+            </div>
+            <h1>Portfolio</h1>
+            <div class="long-line-container">
+                <div class="purple-line-long"></div>
+            </div>            
+        </div>
+        <p>{{ "portfolio-description"}}</p>
+    </div>
+    <div class="project-container">
+        <!-- <app-blueprints></app-blueprints> -->
+        @for(project of myPorto; track project.name; let index = $index){
+            @if(index % 2 == 0){
+                <app-blueprints [projectData]="project"></app-blueprints>
+            } @else {
+                <app-blueprints-mirrored [projectDataMir]="project"></app-blueprints-mirrored>
+            }
+        }
+    </div>
+    <!-- <img class="background-shadow-portfolio-middle" src="./assets/img/background/purple_2.svg">
+    <img class="background-shadow-portfolio-end" src="./assets/img/background/green_1.svg"> -->
+</section> 

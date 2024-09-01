@@ -1,0 +1,22 @@
+<div class="form-container">
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm"> <div class="form-input-container">
+        <div>
+            <input class="form-input" >
+            <!-- @if(){ -->
+            <span class="error-message">Your name is required </span>
+            <!-- } -->
+        </div>
+        <div>
+            <input  class="form-input"  >
+            <!-- @if(!email.valid && email.touched){ -->
+            <span class="error-message">Your mail is required </span>
+            <!-- } -->
+        </div>
+        <div>
+            <textarea ></textarea>
+            <!-- @if(!message.valid && message.touched && !message.disabled){ -->
+            <span class="error-message-textarea">Your message is required</span>
+            <!-- } -->
+        </div>
+    </div></form>
+</div>

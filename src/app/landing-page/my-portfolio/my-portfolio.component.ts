@@ -1,12 +1,18 @@
 import { Component } from '@angular/core';
+import { AppDataServiceComponent } from '../../app-data-service/app-data-service.component';
+import { BlueprintsComponent } from './blueprints/blueprints.component';
+import { BlueprintsMirroredComponent } from './blueprints-mirrored/blueprints-mirrored.component';
 
 @Component({
   selector: 'app-my-portfolio',
   standalone: true,
-  imports: [],
+  imports: [BlueprintsComponent,BlueprintsMirroredComponent],
   templateUrl: './my-portfolio.component.html',
   styleUrl: './my-portfolio.component.scss'
 })
 export class MyPortfolioComponent {
+  myPorto = this.appService.myProjects
+constructor(private appService: AppDataServiceComponent) {
 
+}
 }

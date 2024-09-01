@@ -1,0 +1,193 @@
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-shadow-contact {
+    position: absolute;
+    bottom: -350px;
+    left: -350px;
+    transform: rotateZ(-100deg);
+}
+
+.contact-container {
+    display: flex;
+    gap: 150px;
+    padding-bottom: 51px;
+    padding-top: 100px;
+    color: white;
+
+    >div {
+        display: flex;
+    }
+}
+
+.purple-line {
+    margin-top: 64px;
+    background-color: #9747FF;
+    width: 50px;
+    height: 4px;
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+p {
+    margin: 0;
+}
+
+.contact-left-container {
+    padding-left: 50px;
+}
+
+.contact-headline {
+    font-weight: 700;
+    font-size: 90px;
+    padding-bottom: 85px;
+}
+
+.contact-question {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+app-contactform {
+    margin-top: 230px;
+}
+
+a {
+    height: 39px;
+    width: 39px;
+    margin-bottom: 90px;
+    margin-right: 100px;
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(82deg) brightness(130%) contrast(105%);
+    -webkit-transition: -webkit-filter 100ms linear;
+    z-index: 1;
+
+    &:hover {
+        cursor: pointer;
+        filter: none;
+    }
+}
+
+@media (max-width: 1370px) {
+    .contact-container {
+        gap: 0;
+    }
+}
+
+@media (max-width: 1245px) {
+    .contact-left-container {
+        padding-left: 0;
+    }
+
+    a {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 920px) {
+    .contact-headline {
+        font-size: 64px;
+    }
+
+    .purple-line {
+        margin-top: 45px;
+    }
+
+    .contact-question {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 880px) {
+    section {
+        overflow: hidden;
+        padding-top: 100px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 45px;
+        padding-bottom: 30px;
+        padding-top: 0;
+
+        >div {
+            margin-right: 50px;
+        }
+    }
+
+    .purple-line {
+        margin-top: 31px;
+        min-width: 45px;
+    }
+
+    .contact-left-container {
+        padding-left: 5px;
+        gap: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-headline {
+        font-size: 45px;
+        padding-bottom: 0px;
+    }
+
+    .contact-question {
+        font-size: 23px;
+    }
+
+    app-contactform {
+        margin-top: 0px;
+        overflow-x: visible;
+        margin-right: 50px;
+    }
+
+    .background-shadow-contact {
+        bottom: -650px;
+    }
+}
+
+@media (max-width: 600px) {
+    a {
+        margin-right: 25px;
+        margin-bottom: 50px;
+    }
+
+    .purple-line {
+        min-width: 0;
+    }
+
+    .contact-container {
+        >div {
+            margin-right: 25px;
+        }
+    }
+
+    app-contactform {
+        margin-right: 25px;
+    }
+}
+
+@media (min-width: 1921px) {
+    section {
+        max-width: 1920px;
+        max-height: 1440px;
+        margin: 0 auto;
+        overflow: visible;
+    }
+
+    .contact-container {
+        width: 100%;
+        justify-content: space-between;
+    }
+}

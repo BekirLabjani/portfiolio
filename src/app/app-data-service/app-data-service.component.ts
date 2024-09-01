@@ -1,5 +1,6 @@
 
 import { Injectable } from '@angular/core';
+import { Items } from '../models/item.interface.model';
 
 @Injectable({
   providedIn: 'root',
@@ -77,4 +78,23 @@ export class AppDataServiceComponent {
     "path": "icon-material-design",
     "name": "Material Design"
   }];
+
+  myProjects: Items[] = [
+    {
+      'name': 'El Pollo Loco',
+      'languages': 'HTML | CSS | JavaScript',
+      'description': 'portfolio-join-description',
+      'imgPath': './assets/img/projects-img/Pollo loco 1.png',
+      'livetestPath': '',
+      'githubPath': 'https://github.com/BekirLabjani/el-pollo-loco'
+    },
+    {
+      'name': 'El Pollo Loco2',
+      'languages': 'HTML | CSS | JavaScript',
+      'description': 'portfolio-join-description',
+      'imgPath': './assets/img/projects-img/Pollo loco 1.png',
+      'livetestPath': '',
+      'githubPath': 'https://github.com/BekirLabjani/el-pollo-loco'
+    },
+  ]
 }
