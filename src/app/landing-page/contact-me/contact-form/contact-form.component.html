@@ -1,22 +1,68 @@
 <div class="form-container">
-    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm"> <div class="form-input-container">
+  <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+    <div class="form-input-container">
+      <div>
+        <input
+        #name="ngModel" 
+        [class.is-valid]="name.valid && name.touched" 
+        [class.is-invalid]="!name.valid && name.touched"
+        class="form-input"
+        placeholder="Your Name"
+        name="name"
+        id="name"
+        [(ngModel)]="contactData.name"
+        required
+        />
+        @if(!name.valid && name.touched){
+        <span class="error-message">Your name is required </span>
+        }
+      </div>
+      <div>
+        <input
+        #email="ngModel" 
+        [class.is-valid]="email.valid && email.touched" 
+        [class.is-invalid]="!email.valid && email.touched"
+          class="form-input"
+          placeholder="Your Mail"
+          name="email"
+          id="email"
+          [(ngModel)]="contactData.email"
+          required
+        />
+        @if(!email.valid && email.touched){
+        <span class="error-message">Your mail is required </span>
+        }
+      </div>
+      <div>
+        <textarea
+        #message="ngModel" 
+        [class.is-valid]="message.valid && message.touched" 
+        [class.is-invalid]="!message.valid && message.touched"
+          placeholder="Your Message"
+          id="message"
+          name="message"
+          [(ngModel)]="contactData.message"
+          minlength="5"
+          required
+        ></textarea>
+        @if(!message.valid && message.touched && !message.disabled){
+        <span class="error-message-textarea">Your message is required</span>
+        }
+      </div>
+    </div>
+    <div class="user-interaction-container">
         <div>
-            <input class="form-input" >
-            <!-- @if(){ -->
-            <span class="error-message">Your name is required </span>
-            <!-- } -->
+            <div class="custom-checkbox">
+                <input #checkbox="ngModel" [ngModelOptions]="{standalone: true}" type="checkbox" id="checkbox"
+                    [(ngModel)]="isChecked">
+                <label for="checkbox">I've read the<a routerLink="/privacy-policy"
+                        routerLinkActive="active" ariaCurrentWhenActive="page" class='purple-text'>privacy policy</a>and agree to the processing of my data as outlined.</label>
+            </div>
         </div>
-        <div>
-            <input  class="form-input"  >
-            <!-- @if(!email.valid && email.touched){ -->
-            <span class="error-message">Your mail is required </span>
-            <!-- } -->
+        <div class="btn-container">
+            <button type="submit" disabled [disabled]="!isChecked || contactForm.invalid">Send Message</button>
+            <span id="msgSuccess" class="mail-success"></span>
         </div>
-        <div>
-            <textarea ></textarea>
-            <!-- @if(!message.valid && message.touched && !message.disabled){ -->
-            <span class="error-message-textarea">Your message is required</span>
-            <!-- } -->
-        </div>
-    </div></form>
+    </div>
+  </form>
 </div>

@@ -1,28 +1,34 @@
 import { CommonModule } from '@angular/common';
-import { Component,inject } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
-// import {HttpClient } from '@angular/common/http';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-contact-form',
   standalone: true,
-  imports: [FormsModule,CommonModule],
+  imports: [
+    FormsModule,
+    CommonModule,
+    RouterLink,
+    RouterLinkActive,
+    RouterOutlet,
+  ],
   templateUrl: './contact-form.component.html',
-  styleUrl: './contact-form.component.scss'
+  styleUrls: ['./contact-form.component.scss'],  
 })
 export class ContactFormComponent {
-
-  // http = inject(HttpClient);
+  http = inject(HttpClient);
   contactData = {
     name: '',
     email: '',
     message: '',
-  }
+  };
   mailTest = true;
+  isChecked: boolean = false;
 
-
-post = {
-    endPoint: 'https://http://bekir-labjani.com//sendMail.php',
+  post = {
+    endPoint: 'https://bekir-labjani.com/sendMail.php',  
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -32,14 +38,35 @@ post = {
     },
   };
 
-  
-  onSubmit(contactForm: any) {
-    if (contactForm.valid) {
-      // Hier könntest du das Formular an den Server senden oder andere Aktionen durchführen.
-      console.log('Formular gesendet', this.contactData);
-    } else {
-      console.log('Formular ist ungültig');
+  onSubmit(ngForm: NgForm) {
+    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+        .subscribe({
+          next: (response) => {
+            ngForm.resetForm();
+            this.addActiveClass();
+          },
+          error: (error) => {
+            console.error(error);
+          },
+          complete: () => console.info('send post complete'),
+        });
+    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+      ngForm.resetForm();
+      this.addActiveClass();
     }
   }
-}
 
+  toggleCheckbox() {
+    this.isChecked = !this.isChecked;
+  }
+
+  addActiveClass() {
+    document.querySelector('button[type="submit"]')?.classList.add('btn-active');
+    document.getElementById('msgSuccess')?.classList.add('mail-active');
+    setTimeout(() => {
+      document.querySelector('button[type="submit"]')?.classList.remove('btn-active');
+      document.getElementById('msgSuccess')?.classList.remove('mail-active');
+    }, 2000);
+  }
+}

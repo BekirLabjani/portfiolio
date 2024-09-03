@@ -85,7 +85,7 @@ export class AppDataServiceComponent {
       'languages': 'HTML | CSS | JavaScript',
       'description': 'portfolio-join-description',
       'imgPath': './assets/img/projects-img/Pollo loco 1.png',
-      'livetestPath': '',
+      'livetestPath': './jumprun/index.html',
       'githubPath': 'https://github.com/BekirLabjani/el-pollo-loco'
     },
     {
