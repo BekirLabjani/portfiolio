@@ -82,3 +82,41 @@ section {
     background-color: #9747ff;
     border: none;
 }
+
+@media screen and (min-device-width: 500px) and (max-device-width: 600px) { 
+   .menu-links {
+    display: none;
+   }
+   .burger-menu {
+    display: block;
+    margin-right: 40px;
+   }
+
+}
+@media screen and (min-device-width: 600px) and (max-device-width: 700px) { 
+   .menu-links {
+    display: none;
+   }
+   .burger-menu {
+    display: block;
+    margin-right: 40px;
+   }
+
+}
+@media screen and (min-device-width: 700px) and (max-device-width: 800px) { 
+   .menu-links {
+    display: none;
+   }
+   .burger-menu {
+    display: block;
+    margin-right: 40px;
+   }
+
+}
+@media screen and (min-device-width: 800px) and (max-device-width: 900px) { 
+   .menu-links {
+    margin-right: 60px;
+   }
+  
+
+}

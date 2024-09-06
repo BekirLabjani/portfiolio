@@ -1,6 +1,13 @@
 <section id="#skill">
     <img class="bgc-green" src="assets/img/background/Green shadow 2.png" alt="">
-    <div class="mobile-skills-version dNone"></div>
+    <div class="mobile-skills-version dNone"> 
+        <div class="my-skills-right">
+        <div>
+            <p class="my-skills-headline">My skills</p>
+            <p class="my-skills-description">I have gained experience in building projects with various front end technologies and concepts.</p>
+        </div>
+        <div class="purple-line"></div>
+    </div></div>
     <div class="skills">
         <div class="skills-flex-row">
             @for (icons of mySkills; track $index) {
@@ -9,7 +16,18 @@
                     <p>{{ icons.name }}</p>
                 </div>
                 }
+                <div class="icons" (mouseover)="hidden()">
+                    <img class="hiddens" id="hidden-icon" src="assets/img/icons/my-skills-icon/icon-interest.png">
+                    @if (isHovered) {
+                        <div class="hover-div">
+                            <img src="assets/img/icons/my-skills-icon/img-learn.png" alt="Learn Image">
+                            <img src="assets/img/icons/my-skills-icon/learn-icon.png" alt="Learn Icon">
+                        </div>
+                    }
+                </div>
+            
         </div>
+  
     </div>
     <div class="contact-container">
         <div>
@@ -23,5 +41,5 @@
         </div>
         <a class="button" href="#contact">{{ "myskills-button" }}</a>
     </div>
-    <!-- <a class="mobile-button" href="#contact">{{ "myskills-button" }}</a> -->
+    <a class="mobile-version-button" href="#contact">Get in touch</a>
 </section>

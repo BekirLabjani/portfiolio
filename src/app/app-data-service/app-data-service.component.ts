@@ -9,15 +9,15 @@ import { Items } from '../models/item.interface.model';
 export class AppDataServiceComponent {
   personalInformation = [
     {
-      "path" : "position",
+      "path" : "gps-normal",
       "text" : "Flexible in terms of working environments, I can work effectively bothon-site in Munich and remotely."
     },
     {
-      "path" : "lamp",
+      "path" : "lamp-normal",
       "text" : "I am open-minded and always looking for personal challenges to constantly improve my knowledge and skills.."
     },
     {
-      "path" : "puzzle",
+      "path" : "puzzle-normal",
       "text" : "In my profession, programming isn't just about writing code; it's acreative form of problem-solving. I take pride in my ability to distill complex technical challenges into simple, user-friendly solutions. This way, I help you achieve your goals and bring your visions to life."
     },
   ]
@@ -77,7 +77,12 @@ export class AppDataServiceComponent {
   {
     "path": "icon-material-design",
     "name": "Material Design"
-  }];
+  },
+  // {
+  //   "path": "icon-interest",
+  //   "name": "Continually learning"
+  // },
+];
 
   myProjects: Items[] = [
     {
@@ -86,6 +91,14 @@ export class AppDataServiceComponent {
       'description': 'portfolio-join-description',
       'imgPath': './assets/img/projects-img/Pollo loco 1.png',
       'livetestPath': './jumprun/index.html',
+      'githubPath': 'https://github.com/BekirLabjani/el-pollo-loco'
+    },
+    {
+      'name': 'El Pollo Loco2',
+      'languages': 'HTML | CSS | JavaScript',
+      'description': 'portfolio-join-description',
+      'imgPath': './assets/img/projects-img/Pollo loco 1.png',
+      'livetestPath': '',
       'githubPath': 'https://github.com/BekirLabjani/el-pollo-loco'
     },
     {

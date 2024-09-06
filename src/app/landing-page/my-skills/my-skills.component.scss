@@ -55,6 +55,7 @@ section {
     >img {
         height: 60px;
         width: 60px;
+        cursor: pointer;
         -webkit-animation-duration: 1s;
         animation-duration: 1s;
         -webkit-animation-fill-mode: both;
@@ -77,7 +78,60 @@ section {
         color: white;
     }
 }
+.icons {
+    position: relative; /* Um das hover-div relativ zum .icons-Container zu positionieren */
 
+    > img {
+        height: 120px;
+        width: 100px;
+        cursor: pointer;
+    }
+
+    .hover-div {
+        display: none; /* Zuerst ausgeblendet */
+        position: absolute;
+        top: 0;
+        left: 110%; /* Leicht rechts vom Icon */
+        background-color: rgb(20,29,47);
+        padding: 10px;
+        z-index: 10;
+    }
+
+    &:hover .hover-div {
+        display: block; /* Bei Hover anzeigen */
+    }
+}
+.hover-div {
+    margin-top: -150px;
+    margin-left: -10px;
+}
+.icons:hover #hidden-icon {
+    display: none;
+}
+@keyframes bounce {
+
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+
+    60% {
+        -webkit-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
 
 .button {
     background-color: #70E61C;
@@ -125,4 +179,277 @@ section {
     top: 250px;
     left: 0;
     z-index: 0;
+}
+
+
+.mobile-version-button {
+    background-color: #70E61C;
+    border-radius: 10px;
+    padding: 15px 30px 15px 30px;
+    border: none;
+    color: white;
+    font-size: 23px;
+    transition: scale 0.1s;
+    text-decoration: none;
+    display: none;
+    margin-top: 67px;
+    z-index: 1;
+
+    &:hover {
+        background-color: #9747FF;
+        scale: 1.2;
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (min-device-width: 300px) and (max-device-width: 400px) { 
+    section {
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+    .mobile-version-button {
+        display: flex;
+        justify-content: center;
+        width: 200px;
+    }
+    .mobile-skills-version {
+        display: flex;
+        
+    }
+    .skills-flex-row {
+        width: 100%;
+    }
+    .icon-box {
+        padding-right: 38px;
+        width: 90px;
+    }
+    .contact-container {
+        display: none;
+    }
+    .my-skills-right {
+    
+        >div {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+    .skills {
+        width: 388px;
+    }
+}
+@media screen and (min-device-width: 400px) and (max-device-width: 500px) { 
+    section {
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+    .mobile-version-button {
+        display: flex;
+        justify-content: center;
+        width: 200px;
+    }
+    .mobile-skills-version {
+        display: flex;
+        
+    }
+    .skills-flex-row {
+        width: 100%;
+    }
+    .icon-box {
+        padding-right: 38px;
+        width: 90px;
+    }
+    .contact-container {
+        display: none;
+    }
+    .my-skills-right {
+    
+        >div {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+    .skills {
+        width: 388px;
+    }
+}
+@media screen and (min-device-width: 500px) and (max-device-width: 600px) { 
+    section {
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+    .mobile-version-button {
+        display: flex;
+        justify-content: center;
+        width: 200px;
+    }
+    .mobile-skills-version {
+        display: flex;
+        
+    }
+    .skills-flex-row {
+        width: 100%;
+    }
+    .icon-box {
+        padding-right: 38px;
+        width: 90px;
+    }
+    .contact-container {
+        display: none;
+    }
+    .my-skills-right {
+    
+        >div {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+    .skills {
+        width: 388px;
+    }
+}
+
+@media screen and (min-device-width: 600px) and (max-device-width: 700px) { 
+    section {
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+    .mobile-version-button {
+        display: flex;
+        justify-content: center;
+        width: 200px;
+    }
+    .mobile-skills-version {
+        display: flex;
+        
+    }
+    .skills-flex-row {
+        width: 100%;
+    }
+    .icon-box {
+        padding-right: 60px;
+        width: 90px;
+    }
+    .contact-container {
+        display: none;
+    }
+    .my-skills-right {
+    
+        >div {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+    .skills {
+        width: 460px;
+    }
+}
+
+@media screen and (min-device-width: 700px) and (max-device-width: 800px) { 
+    section {
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+    .mobile-version-button {
+        display: flex;
+        justify-content: center;
+        width: 200px;
+    }
+    .mobile-skills-version {
+        display: flex;
+        
+    }
+    .skills-flex-row {
+        width: 100%;
+    }
+    .icon-box {
+        padding-right: 90px;
+        width: 90px;
+    }
+    .contact-container {
+        display: none;
+    }
+    .my-skills-right {
+    
+        >div {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+    .skills {
+        width: 600px;
+    }
+}
+@media screen and (min-device-width: 800px) and (max-device-width: 900px) { 
+    section {
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+    .mobile-version-button {
+        display: flex;
+        justify-content: center;
+        width: 200px;
+    }
+    .mobile-skills-version {
+        display: flex;
+        
+    }
+    .skills-flex-row {
+        width: 100%;
+    }
+    .icon-box {
+        padding-right: 90px;
+        width: 90px;
+    }
+    .contact-container {
+        display: none;
+    }
+    .my-skills-right {
+    
+        >div {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+}
+
+@media screen and (min-device-width: 900px) and (max-device-width: 1000px) { 
+    .skills {
+        width: 540px;
+    }
+    .skills-flex-row {
+        width: 100%;
+    }
+    .icon-box {
+        padding-right: 90px;
+        width: 90px;
+    }
+}
+@media screen and (min-device-width: 1000px) and (max-device-width: 1160px) { 
+    .skills {
+        width: 540px;
+    }
+    .skills-flex-row {
+        width: 100%;
+    }
+}
+@media screen and (min-device-width: 1160px) and (max-device-width: 1270px) { 
+    .skills {
+        width: 540px;
+    }
+    .skills-flex-row {
+        width: 100%;
+    }
 }

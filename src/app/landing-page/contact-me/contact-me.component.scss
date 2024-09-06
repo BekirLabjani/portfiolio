@@ -9,9 +9,10 @@ section {
 
 .background-shadow-contact {
     position: absolute;
-    bottom: -350px;
-    left: -350px;
-    transform: rotateZ(-100deg);
+    bottom: 0;
+    left: 0;
+    transform: 1;
+    z-index: -1;
 }
 
 .contact-container {
@@ -69,9 +70,8 @@ a {
     margin-bottom: 90px;
     margin-right: 100px;
     filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(82deg) brightness(130%) contrast(105%);
-    -webkit-transition: -webkit-filter 100ms linear;
     z-index: 1;
-
+    
     &:hover {
         cursor: pointer;
         filter: none;

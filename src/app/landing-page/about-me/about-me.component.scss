@@ -39,7 +39,11 @@ section {
     gap: 35px;
     align-items: flex-start;
     >img {
-        
+        cursor: pointer;
+
+        &:hover {
+            scale: (1.5);
+        }
     }
 }
 .img-from-me{
@@ -67,4 +71,97 @@ section {
     width: 267px;
     height: 4px;
     border: none;
+}
+
+
+@media screen and (min-device-width: 300px) and (max-device-width: 400px) { 
+    .img-from-me {
+        display: none;
+    }
+    .me {
+        width: 80vw;
+    }
+    .about-me-container {
+        gap: 60px;
+    }
+}
+
+@media screen and (min-device-width: 400px) and (max-device-width: 500px) { 
+    .img-from-me {
+        display: none;
+    }
+    .me {
+        width: 80vw;
+    }
+    .about-me-container {
+        gap: 60px;
+    }
+}
+@media screen and (min-device-width: 500px) and (max-device-width: 600px) { 
+    .img-from-me {
+        display: none;
+    }
+    .me {
+        width: 80vw;
+    }
+    .about-me-container {
+        gap: 60px;
+    }
+}
+@media screen and (min-device-width: 600px) and (max-device-width: 700px) { 
+    .img-from-me {
+        display: none;
+    }
+    .me {
+        width: 80vw;
+    }
+    .about-me-container {
+        gap: 60px;
+    }
+}
+@media screen and (min-device-width: 700px) and (max-device-width: 800px) { 
+    .img-from-me {
+        display: none;
+    }
+    .me {
+        width: 80vw;
+    }
+    .about-me-container {
+        gap: 60px;
+    }
+}
+
+@media screen and (min-device-width: 800px) and (max-device-width: 900px) { 
+    .img-from-me {
+        display: none;
+    }
+    .me {
+        width: 80vw;
+    }
+    .about-me-container {
+        gap: 60px;
+    }
+}
+@media screen and (min-device-width: 900px) and (max-device-width: 1000px) { 
+    .green-circle {
+        height: 300px;
+        width: 300px;
+    }
+    .green-line {
+        width: 100px;
+
+    }
+    .about-me-container {
+        gap: 60px;
+    }
+}
+@media screen and (min-device-width: 1000px) and (max-device-width: 1160px) { 
+    .green-circle {
+        height: 300px;
+        width: 300px;
+    }
+    .green-line {
+        width: 170px;
+
+    }
 }

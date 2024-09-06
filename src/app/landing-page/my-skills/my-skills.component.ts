@@ -13,5 +13,19 @@ export class MySkillsComponent {
 constructor(private appDataService: AppDataServiceComponent){
 
 }
+isHovered = false;
+
+hidden() {
+  this.isHovered = true;
+  
+}
+
+showOriginal() {
+  this.isHovered = false;
+}
+
 
 }
+
+
+
