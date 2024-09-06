@@ -92,9 +92,14 @@ section {
     }
     .me {
         width: 80vw;
+
+        span {
+            font-size: 45px;
+        }
     }
     .about-me-container {
         gap: 60px;
+     padding-left: 40px;
     }
 }
 @media screen and (min-device-width: 500px) and (max-device-width: 600px) { 

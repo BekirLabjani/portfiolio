@@ -163,7 +163,9 @@ section {
     font-weight: 400;
     text-align: right;
 }
-
+.colores {
+    color: white;
+}
 .purple-line{
     margin-top: 70px;
     background-color: #9747FF;
@@ -202,6 +204,12 @@ section {
     }
 }
 
+.mobile-version-container{
+    display: none;
+    flex-direction: column;
+    align-items: end;
+    width: 90%;
+}
 
 @media screen and (min-device-width: 300px) and (max-device-width: 400px) { 
     section {
@@ -245,21 +253,34 @@ section {
         flex-direction: column;
         align-items: center;
         gap: 100px;
+        padding-left: 0;
     }
     .mobile-version-button {
         display: flex;
         justify-content: center;
         width: 200px;
     }
+    .mobile-version-container {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+    }
     .mobile-skills-version {
         display: flex;
         
+    }
+    .my-skills-headline {
+        font-size: 75px;
+    }
+    .purple-line {
+        margin-top: 60px;
     }
     .skills-flex-row {
         width: 100%;
     }
     .icon-box {
-        padding-right: 38px;
+        padding-right: 20px;
         width: 90px;
     }
     .contact-container {
@@ -274,7 +295,7 @@ section {
         }
     }
     .skills {
-        width: 388px;
+        width: 95%;
     }
 }
 @media screen and (min-device-width: 500px) and (max-device-width: 600px) { 
@@ -287,6 +308,9 @@ section {
         display: flex;
         justify-content: center;
         width: 200px;
+    }
+    .mobile-version-container {
+        display: flex;
     }
     .mobile-skills-version {
         display: flex;
@@ -326,6 +350,9 @@ section {
         justify-content: center;
         width: 200px;
     }
+    .mobile-version-container {
+        display: flex;
+    }
     .mobile-skills-version {
         display: flex;
         
@@ -364,6 +391,9 @@ section {
         justify-content: center;
         width: 200px;
     }
+    .mobile-version-container {
+        display: flex;
+    }
     .mobile-skills-version {
         display: flex;
         
@@ -400,6 +430,9 @@ section {
         display: flex;
         justify-content: center;
         width: 200px;
+    }
+    .mobile-version-container {
+        display: flex;
     }
     .mobile-skills-version {
         display: flex;
