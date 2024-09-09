@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { AppDataServiceComponent } from '../../app-data-service/app-data-service.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-my-skills',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './my-skills.component.html',
   styleUrl: './my-skills.component.scss'
 })
@@ -15,13 +16,16 @@ constructor(private appDataService: AppDataServiceComponent){
 }
 isHovered = false;
 
-hidden() {
-  this.isHovered = true;
-  
+showHidden() {
+    this.isHovered = true;
 }
 
-showOriginal() {
-  this.isHovered = false;
+hideHidden() {
+    this.isHovered = false;
+}
+
+toggleHidden() {
+    this.isHovered = !this.isHovered;
 }
 
 

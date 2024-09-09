@@ -16,16 +16,13 @@
                     <p>{{ icons.name }}</p>
                 </div>
                 }
-                <div class="icons" (mouseover)="hidden()">
+                <div class="icons" (mouseover)="showHidden()" (click)="toggleHidden()">
                     <img class="hiddens" id="hidden-icon" src="assets/img/icons/my-skills-icon/icon-interest.png">
-                    @if (isHovered) {
-                        <div class="hover-div">
-                            <img src="assets/img/icons/my-skills-icon/img-learn.png" alt="Learn Image">
-                            <img src="assets/img/icons/my-skills-icon/learn-icon.png" alt="Learn Icon">
-                        </div>
-                    }
+                    <div *ngIf="isHovered" class="hover-div">
+                        <img src="assets/img/icons/my-skills-icon/img-learn.png" alt="Learn Image">
+                        <img src="assets/img/icons/my-skills-icon/learn-icon.png" alt="Learn Icon">
+                    </div>
                 </div>
-            
         </div>
   
     </div>
@@ -42,7 +39,7 @@
         <a class="button" href="#contact">{{ "myskills-button" }}</a>
     </div>
     <div class="mobile-version-container">
-        <span>Looking for <span class="purpel-text">another skill</span>?</span>
+        <span class="mobile-version-headline">Looking for <span class="purpel-text">another skill</span>?</span>
         <span class="my-skills-description colores">Feel free to contact me. I look forward to expanding on my previous knowledge.</span>
         <a class="mobile-version-button" href="#contact">Get in touch</a>
     </div>

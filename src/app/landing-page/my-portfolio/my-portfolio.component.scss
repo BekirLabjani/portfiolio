@@ -97,7 +97,45 @@ h1 {
 }
 
 
-@media screen and (min-device-width: 800px) and (max-device-width: 900px) { 
+@media screen and (min-width: 300px) and (max-width: 400px) { 
+.portfolio-headline-container {
+    >p{
+        padding-inline: 20px;
+    }
+}
+.portfolio-headline {
+    >h1 {
+        color: white;
+        font-size: 49px;
+        font-weight: 700;
+        margin: 0;
+        /* margin-right: 42px; */
+    
+    }
+}
+.purple-line-short {
+    width: 70%;
+}
 
+@media screen and (min-width: 400px) and (max-width: 500px) { 
+.portfolio-headline-container {
+    >p{
+        padding-inline: 20px;
+    }
+}
+.portfolio-headline {
+    >h1 {
+        color: white;
+        font-size: 49px;
+        font-weight: 700;
+        margin: 0;
+        /* margin-right: 42px; */
+    
+    }
+}
+.purple-line-short {
+    width: 70%;
+}
 
+}
 }

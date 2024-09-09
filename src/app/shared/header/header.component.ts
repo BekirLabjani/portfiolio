@@ -16,7 +16,20 @@ export class HeaderComponent {
 
   constructor(private appDataService: AppDataServiceComponent) {}
 
+  ngOnInit() {
+    this.closeBurgerMenuOnClick();
+  }
+
+
   setActiveLink(index: number): void {
     this.activeLinkIndex = index;
+  }
+
+  isMenuOpen = true;
+
+
+
+  closeBurgerMenuOnClick() {
+    this.isMenuOpen = !this.isMenuOpen;
   }
 }

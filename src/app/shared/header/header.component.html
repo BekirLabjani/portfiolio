@@ -33,5 +33,19 @@
       <div *ngIf="activeLinkIndex === i" class="purpel-line-active"></div>
     </div>
   </div>
-  <div class="burger-menu d-None"><img src="assets/img/icons/about-me-icons/burzger-main-mobile.png" alt=""></div>
+  <div class="burger-menu d-None">
+    <img
+      (click)="closeBurgerMenuOnClick()"
+      src="assets/img/icons/about-me-icons/burzger-main-mobile.png"
+      alt=""
+    />
+    <div class="mobile-screen-menu" [ngClass]="{ open: isMenuOpen }">
+      <div>
+        <a (click)="closeBurgerMenuOnClick()" href="#aboutMe">About me</a>
+        <a (click)="closeBurgerMenuOnClick()" href="#skills">My skills</a>
+        <a (click)="closeBurgerMenuOnClick()" href="#portfolio">Portfolio</a>
+        <a (click)="closeBurgerMenuOnClick()" href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
 </section>
