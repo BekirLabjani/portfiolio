@@ -116,6 +116,7 @@ h1 {
 .purple-line-short {
     width: 70%;
 }
+}
 
 @media screen and (min-width: 400px) and (max-width: 500px) { 
 .portfolio-headline-container {
@@ -128,7 +129,7 @@ h1 {
         color: white;
         font-size: 49px;
         font-weight: 700;
-        margin: 0;
+        margin-left: 0;
         /* margin-right: 42px; */
     
     }
@@ -137,5 +138,4 @@ h1 {
     width: 70%;
 }
 
-}
 }
