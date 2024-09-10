@@ -74,12 +74,13 @@ a {
     background-color: #9747FF;
     border: none;
 }
-b-btn {
+.github-btn {
     background-color: transparent;
     border: 1px solid #70E61C;
     display: flex;
     align-items: center;
 }
+
 
 @media screen and (min-width: 300px) and (max-width: 400px) { 
 
@@ -98,20 +99,19 @@ b-btn {
     }
     .project-btns-container { 
         gap: 50px;
-
-    
     }
     .test-btn,.github-btn{
             font-size: 15px;
     }
 }
+
 @media screen and (min-width: 400px) and (max-width: 500px) { 
     section {
-        flex-direction: column;
+        flex-direction: column-reverse;
         height: 700px;
         >div {
             align-items:center ;
-         
+            width: 90%;
         }
         >img {
             max-width: 400px;
@@ -120,11 +120,13 @@ b-btn {
     .portfolio-headline-container {
         padding-bottom: 0;
     }
+
     .blueprints-info{
         width: 90%;
     }
 
 }
+
 @media screen and (min-width: 500px) and (max-width: 600px) { 
 
     section {
@@ -141,6 +143,7 @@ b-btn {
         padding-bottom: 0;
     }
 }
+
 @media screen and (min-width: 600px) and (max-width: 700px) { 
 
     section {
@@ -157,6 +160,7 @@ b-btn {
         padding-bottom: 0;
     }
 }
+
 @media screen and (min-device-width: 700px) and (max-device-width: 800px) { 
 
     section {

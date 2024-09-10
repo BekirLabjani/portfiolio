@@ -155,6 +155,7 @@ button {
         width: 261px;
         
     }
+    
     .main-container {
         flex-direction: column;
     }
@@ -193,6 +194,7 @@ button {
 @media screen and (min-height: 700px) and (max-height: 800px) {
     .my-images{
         height: 378px;
+        
     }
     .my-name {
         gap: 10px;
@@ -201,7 +203,7 @@ button {
         top: 400px;
      }
 }
-@media screen and (min-device-width: 400px) and (max-device-width: 500px) { 
+@media screen and (min-width: 400px) and (max-width: 500px) { 
     .skills {
         width: 540px;
     }
@@ -210,7 +212,7 @@ button {
     }
     .my-images {
         height: 444px;
-        width: 360px;
+        width: 340px;
     }
     .main-container {
         flex-direction: column;
@@ -242,7 +244,7 @@ button {
         display: none;
     }
 }
-@media screen and (min-device-width: 500px) and (max-device-width: 600px) { 
+@media screen and (min-width: 500px) and (max-width: 600px) { 
     .skills {
         width: 540px;
     }
@@ -285,7 +287,6 @@ button {
 
     .my-images {
         height: 365px;
-        width: 410px;
     }
 } 
 
