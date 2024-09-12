@@ -10,15 +10,22 @@
 #contact {
     display: flex;
     justify-content: center;
-        width: 90%;
-        margin: auto;
+        width: 90%; 
 }
 
-@media screen and  (min-width: 1920px){
 
-    .app-content {
-        margin: 0 auto;
-    max-width: 1920px;
-    overflow-x: hidden;
-    }
+.green-line{
+    background-color: #70e61c;
+    width: 267px;
+    height: 4px;
+    border: none;
 }
+
+// @media screen and  (min-width: 1920px){
+
+//     .app-content {
+//         margin: 0 auto;
+//     max-width: 1920px;
+//     overflow-x: hidden;
+//     }
+// }

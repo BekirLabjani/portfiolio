@@ -72,7 +72,17 @@ section {
     height: 4px;
     border: none;
 }
-
+.green-line-outside{
+    background-color: #70e61c;
+    width: 25%;
+    height: 4px;
+    border: none;
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    top: 1940px;
+    display: none;
+}
 
 @media screen and (min-width: 300px) and (max-width: 400px) { 
     section {
@@ -191,3 +201,18 @@ section {
 
     }
 }
+
+
+@media (min-width: 1921px) {
+    section {
+        max-width: 1920px;
+        margin: 0 auto;
+        overflow-x: clip;
+    }
+
+.green-line-outside {
+    display: block;
+}
+      
+}
+    

@@ -548,8 +548,32 @@ font-size: 50px;
     .activities {
         font-size: 50px;
     }
-  
+
 }
+@media screen  and (min-width: 1921px) { 
+
+    section {
+        display: flex;
+            justify-content: center;
+    }
+      .curve-images {
+        top: 0;
+        
+      }
+      .main-container {
+        display: flex;
+      }
+        .my-images {
+            margin-left: 0;
+        } 
+        .buttom-links {
+            max-width: 1920px;
+        } 
+        .desing-line {
+            width: 60%;
+        }
+    }
+    
 
 
 

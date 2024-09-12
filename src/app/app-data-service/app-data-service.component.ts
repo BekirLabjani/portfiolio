@@ -88,17 +88,17 @@ export class AppDataServiceComponent {
     {
       'name': 'El Pollo Loco',
       'languages': 'HTML | CSS | JavaScript',
-      'description': 'portfolio-join-description',
+      'description': 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
       'imgPath': './assets/img/projects-img/Pollo loco 1.png',
       'livetestPath': './jumprun/index.html',
       'githubPath': 'https://github.com/BekirLabjani/el-pollo-loco'
     },
     {
-      'name': 'El Pollo Loco2',
+      'name': 'Join',
       'languages': 'HTML | CSS | JavaScript',
-      'description': 'portfolio-join-description',
-      'imgPath': './assets/img/projects-img/Pollo loco 1.png',
-      'livetestPath': '',
+      'description': 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop function, assign users and categories.',
+      'imgPath': './assets/img/projects-img/join.png',
+      'livetestPath': './join-app/loginpage.html',
       'githubPath': 'https://github.com/BekirLabjani/el-pollo-loco'
     },
     {

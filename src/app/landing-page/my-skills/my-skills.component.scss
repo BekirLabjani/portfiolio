@@ -177,8 +177,8 @@ section {
 }
 .bgc-green {
     position: absolute;
-    transform: rotateX(180deg);
-    top: 250px;
+    transform: rotate(0deg);
+    top: 210%;
     left: 0;
     z-index: 0;
 }
@@ -545,5 +545,12 @@ color: white;
     }
     .skills-flex-row {
         width: 100%;
+    }
+}
+@media (min-width: 1921px) {
+    section {
+        max-width: 1920px;
+        max-height: 1440px;
+        margin: 0 auto;
     }
 }

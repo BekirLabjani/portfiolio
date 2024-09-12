@@ -15,6 +15,16 @@ section {
     z-index: -1;
 }
 
+.background-shadow-contact-two {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 373%;
+    transform: 1;
+    z-index: 0;
+    display: none;
+}
+
 .contact-container {
     display: flex;
     gap: 150px;
@@ -190,4 +200,27 @@ a {
         width: 100%;
         justify-content: space-between;
     }
+    .background-shadow-contact-two {
+     display: block;
+    }
+    .background-shadow-contact{
+        display: none;
+    }
+}
+@media (min-width: 1800px) and  (max-width: 1921px)  {
+    section {
+        max-width: 1920px;
+        max-height: 1440px;
+        margin: 0 auto;
+        overflow: visible;
+    }
+
+    .contact-container {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .background-shadow-contact-two {
+     display: block;
+    }
+  
 }
