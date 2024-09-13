@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, AfterViewInit } from '@angular/core';
 import { HeaderComponent } from '../shared/header/header.component';
 import { StartPageComponent } from './start-page/start-page.component';
 import { AboutMeComponent } from './about-me/about-me.component';
@@ -6,6 +6,12 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
 import { MyPortfolioComponent } from './my-portfolio/my-portfolio.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { FooterComponent } from '../shared/footer/footer.component';
+// import {
+//   trigger,
+//   style,
+//   animate,
+//   transition
+// } from '@angular/animations';
 
 @Component({
   selector: 'app-landing-page',
@@ -19,9 +25,19 @@ import { FooterComponent } from '../shared/footer/footer.component';
      ContactMeComponent,
      FooterComponent
     ],
+    // animations: [
+    //   trigger('fadeIn', [
+    //     transition(':enter', [
+    //       style({ opacity: 0 }),
+    //       animate('1000ms ease-in', style({ opacity: 1 }))
+    //     ])
+    //   ])
+    // ],
   templateUrl: './landing-page.component.html',
-  styleUrl: './landing-page.component.scss'
+  styleUrl: './landing-page.component.scss',
+  
 })
 export class LandingPageComponent {
 
+ 
 }

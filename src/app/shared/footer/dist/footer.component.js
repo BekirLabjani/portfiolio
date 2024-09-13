@@ -8,14 +8,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 exports.__esModule = true;
 exports.FooterComponent = void 0;
 var core_1 = require("@angular/core");
+var imprint_component_1 = require("../imprint/imprint.component");
 var FooterComponent = /** @class */ (function () {
-    function FooterComponent() {
+    function FooterComponent(router) {
+        this.router = router;
     }
+    FooterComponent.prototype.openImp = function (event) {
+        event.preventDefault();
+        this.router.navigateByUrl('/imprint/');
+    };
     FooterComponent = __decorate([
         core_1.Component({
             selector: 'app-footer',
             standalone: true,
-            imports: [],
+            imports: [imprint_component_1.ImprintComponent],
             templateUrl: './footer.component.html',
             styleUrl: './footer.component.scss'
         })

@@ -5,7 +5,9 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './start-page.component.html',
-  styleUrl: './start-page.component.scss'
+  styleUrls: [
+    './start-page-responsiv.scss','./start-page.component.scss' // Responsives Stylesheet
+  ]
 })
 export class StartPageComponent {
 

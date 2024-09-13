@@ -1,10 +1,9 @@
 <section id="about-me">
   <div class="about-me-container">
     <div class="me">
-      <span>About me</span>
+      <span>{{'AboutMeTitle' | translate}}</span>
       <p>
-        Hi, I am a Front-end developer based in Lingen, Germany. I love to learn
-        new tech-related things.
+       {{'AboutMeIntro' | translate}}
       </p>
       @for (information of personalInformation; track $index) {
         <div class="infos">
@@ -22,10 +21,4 @@
       <div class="green-line"></div>
     </div>
   </div>
-
-  <!-- <img
-    class="about-me-bgc"
-    src="assets/img/background/30. Purple shadow about me.png"
-    alt=""
-  /> -->
 </section>

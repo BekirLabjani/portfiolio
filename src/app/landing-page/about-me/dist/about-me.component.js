@@ -9,7 +9,9 @@ exports.__esModule = true;
 exports.AboutMeComponent = void 0;
 var core_1 = require("@angular/core");
 var AboutMeComponent = /** @class */ (function () {
-    function AboutMeComponent() {
+    function AboutMeComponent(appDataService) {
+        this.appDataService = appDataService;
+        this.personalInformation = this.appDataService.personalInformation;
     }
     AboutMeComponent = __decorate([
         core_1.Component({

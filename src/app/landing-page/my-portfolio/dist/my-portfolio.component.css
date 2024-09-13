@@ -1,0 +1,146 @@
+section {
+  padding-top: 100px;
+  margin-bottom: 140px;
+  position: relative;
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+}
+
+.background-shadow-portfolio-middle {
+  position: absolute;
+  left: 0px;
+  top: 225px;
+}
+
+.background-shadow-portfolio-end {
+  position: absolute;
+  right: -500px;
+  bottom: 0px;
+  transform: rotateZ(75deg);
+}
+
+p {
+  margin: 0;
+  color: white;
+  font-size: 16px;
+}
+
+.portfolio-headline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  padding-bottom: 116px;
+}
+
+.portfolio-headline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.purple-line-long {
+  width: 100%;
+  height: 4px;
+  background-color: #9747FF;
+  border: none;
+  margin-top: 5px;
+}
+
+.long-line-container {
+  width: 33%;
+}
+
+h1 {
+  color: white;
+  font-size: 90px;
+  font-weight: 700;
+  margin: 0;
+  margin-right: 42px;
+  margin-left: 36px;
+}
+
+.purple-line-short {
+  width: 26%;
+  height: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  background-color: #9747FF;
+  border: none;
+  margin-top: 5px;
+}
+
+.short-line-container {
+  width: 33%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  margin-left: 100px;
+  margin-right: 100px;
+  z-index: 1;
+  position: relative;
+}
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  .portfolio-headline-container > p {
+    padding-inline: 20px;
+  }
+
+  .portfolio-headline > h1 {
+    color: white;
+    font-size: 49px;
+    font-weight: 700;
+    margin: 0;
+    /* margin-right: 42px; */
+  }
+
+  .purple-line-short {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  .portfolio-headline-container > p {
+    padding-inline: 20px;
+  }
+
+  .project-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .portfolio-headline > h1 {
+    color: white;
+    font-size: 49px;
+    font-weight: 700;
+    margin-left: 0;
+    /* margin-right: 42px; */
+  }
+
+  .purple-line-short {
+    width: 70%;
+  }
+}
+@media (min-width: 1921px) {
+  section {
+    max-width: 1920px;
+    max-height: 1440px;
+    margin: 0 auto;
+  }
+
+  .project-container {
+    gap: 40px;
+  }
+}

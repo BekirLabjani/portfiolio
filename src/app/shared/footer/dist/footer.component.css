@@ -1,0 +1,143 @@
+footer {
+  height: 291px;
+  left: 0;
+  right: 0;
+  background-color: #141D2F;
+  border-top: 4px solid #70E61C;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+footer > div {
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.imprint-container {
+  position: relative;
+  color: white;
+  width: 100%;
+  font-size: 20px;
+  margin-left: 44px;
+}
+.imprint-container > a {
+  text-decoration: none;
+  color: white;
+}
+.imprint-container > a:hover {
+  cursor: pointer;
+}
+
+.name-logo {
+  font-family: "Arial", sans-serif;
+  font-size: 52px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-inline: 40px;
+}
+
+.letter {
+  position: relative;
+  display: inline-block;
+}
+
+.letter.special {
+  color: #32d74b;
+}
+
+.letter:last-child {
+  margin-right: 0;
+}
+
+.blue-line {
+  background-color: #1CDAE6;
+  width: 58px;
+  height: 2px;
+  border: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.footer-info > p {
+  margin: 0;
+  color: white;
+}
+.footer-info > div {
+  display: flex;
+  gap: 42px;
+}
+
+.footer-middle {
+  font-size: 23px;
+}
+
+.footer-icon-container > a {
+  height: 30px;
+}
+
+.footer-icon {
+  height: 40px;
+  width: 40px;
+  transition: scale 0.2s;
+}
+.footer-icon:hover {
+  scale: 1.3;
+  cursor: pointer;
+}
+
+.mobile-imprint {
+  display: none;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+}
+
+@media (max-width: 1245px) {
+  footer > div {
+    margin: 0 50px 0 50px;
+  }
+}
+@media (max-width: 650px) {
+  footer {
+    justify-content: center;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    gap: 23px;
+  }
+
+  .mobile-imprint {
+    display: flex;
+  }
+
+  .imprint-container {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  footer {
+    height: 380px;
+  }
+  footer > div {
+    margin: 0 25px 0 25px;
+  }
+
+  .footer-headline {
+    margin-bottom: 55px !important;
+  }
+}

@@ -8,7 +8,12 @@
       <span class="letter special">r</span>
     </div>
   </div>
-
+  <button class="translate-button">
+    <img (click)="switchLanguage('en')" [ngClass]="{'inactivate': isInactive}"  class="language-icon-en"
+        src="./assets/img/icons/translate/en.jpeg">
+    <img (click)="switchLanguage('de')" [ngClass]="{'inactivate': isInactive1}" class="language-icon-ger"
+        src="./assets/img/icons/translate/ge.jpeg">
+</button>
   <div class="menu-links">
     <!-- <div class="header-button">
       <a href="#about-me" class="my-links">About me</a>

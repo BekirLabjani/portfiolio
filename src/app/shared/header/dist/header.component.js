@@ -7,15 +7,30 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 exports.__esModule = true;
 exports.HeaderComponent = void 0;
+var common_1 = require("@angular/common");
 var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
 var HeaderComponent = /** @class */ (function () {
-    function HeaderComponent() {
+    function HeaderComponent(appDataService) {
+        this.appDataService = appDataService;
+        this.myContentLinks = this.appDataService.myContentLinks; // Correct variable name
+        this.activeLinkIndex = null;
+        this.isMenuOpen = true;
     }
+    HeaderComponent.prototype.ngOnInit = function () {
+        this.closeBurgerMenuOnClick();
+    };
+    HeaderComponent.prototype.setActiveLink = function (index) {
+        this.activeLinkIndex = index;
+    };
+    HeaderComponent.prototype.closeBurgerMenuOnClick = function () {
+        this.isMenuOpen = !this.isMenuOpen;
+    };
     HeaderComponent = __decorate([
         core_1.Component({
             selector: 'app-header',
             standalone: true,
-            imports: [],
+            imports: [common_1.CommonModule, router_1.RouterLink],
             templateUrl: './header.component.html',
             styleUrl: './header.component.scss'
         })

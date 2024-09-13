@@ -1,15 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, AfterViewInit } from '@angular/core';
 import { AppDataServiceComponent } from '../../app-data-service/app-data-service.component';
+import { TranslateModule } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-about-me',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './about-me.component.html',
-  styleUrl: './about-me.component.scss'
+  styleUrls: [
+    './about-me.component.scss','./about-me-responsiv.component.scss' // Responsives Stylesheet
+  ]
 })
 export class AboutMeComponent {
   personalInformation = this.appDataService.personalInformation;
-constructor(private appDataService: AppDataServiceComponent){
+constructor(private appDataService: AppDataServiceComponent,private el: ElementRef){
 }
+
 }
+

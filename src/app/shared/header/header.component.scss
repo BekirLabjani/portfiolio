@@ -125,6 +125,30 @@ section {
     .mobile-screen-menu.open {
         right: 0;
     }
+.translate-button {
+    width: 80px;
+    border-radius: 25px;
+    height: 30px;
+    border: unset;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+
+    >img {
+        height: 30px;
+        width: 30px;
+        border-radius: 100%;
+        object-fit: cover;
+        cursor: pointer;
+    }
+}
+.inactivate{
+    background-color: #141d2f;
+    border: 4px solid #141D2F;
+}
+
+
 @media screen and (min-width: 300px) and (max-width: 400px) { 
    .menu-links {
     display: none;

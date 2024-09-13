@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 exports.__esModule = true;
 exports.ContactMeComponent = void 0;
 var core_1 = require("@angular/core");
+var contact_form_component_1 = require("./contact-form/contact-form.component");
 var ContactMeComponent = /** @class */ (function () {
     function ContactMeComponent() {
     }
@@ -15,7 +16,7 @@ var ContactMeComponent = /** @class */ (function () {
         core_1.Component({
             selector: 'app-contact-me',
             standalone: true,
-            imports: [],
+            imports: [contact_form_component_1.ContactFormComponent],
             templateUrl: './contact-me.component.html',
             styleUrl: './contact-me.component.scss'
         })

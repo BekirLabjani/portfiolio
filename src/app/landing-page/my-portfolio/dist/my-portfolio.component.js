@@ -8,14 +8,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 exports.__esModule = true;
 exports.MyPortfolioComponent = void 0;
 var core_1 = require("@angular/core");
+var blueprints_component_1 = require("./blueprints/blueprints.component");
+var blueprints_mirrored_component_1 = require("./blueprints-mirrored/blueprints-mirrored.component");
 var MyPortfolioComponent = /** @class */ (function () {
-    function MyPortfolioComponent() {
+    function MyPortfolioComponent(appService) {
+        this.appService = appService;
+        this.myPorto = this.appService.myProjects;
     }
     MyPortfolioComponent = __decorate([
         core_1.Component({
             selector: 'app-my-portfolio',
             standalone: true,
-            imports: [],
+            imports: [blueprints_component_1.BlueprintsComponent, blueprints_mirrored_component_1.BlueprintsMirroredComponent],
             templateUrl: './my-portfolio.component.html',
             styleUrl: './my-portfolio.component.scss'
         })

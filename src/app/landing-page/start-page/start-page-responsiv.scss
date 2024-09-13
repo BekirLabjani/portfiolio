@@ -1,0 +1,390 @@
+@media (min-width:300px) and (max-width:400px){
+    .activities {
+        font-size: 16px !important;
+    }
+    .headline-name {
+        font-size: 28px !important;
+    }
+    .my-images {
+        margin-left: 0 !important;
+        width: 295px !important;
+        height: 428px !important;
+    }
+    
+    .my-name {
+        margin-left: 0 !important;
+        gap: 45px !important;
+        margin-right: 34px !important;
+         width: 90%;
+        >a{
+            margin-left: 40px;
+        }
+    }
+   .main-container {
+    flex-direction: column;
+    align-items: center;
+   }
+    .headline-left-side{
+        width: 64px !important;
+        height: 45px !important;
+        >span {
+            font-size: 27px !important;
+        }
+    }
+    .curve-images {
+        display: none;
+    }
+    .curve-images-two {
+        display: block !important;
+        top: 460px !important;
+    }
+    .my-email-adress{
+        display: none;
+    }
+    .desing-line {
+        width: 210px !important;
+    }
+
+    .buttom-links{
+        width: 87% !important;
+    }
+
+}
+@media (min-width:400px) and (max-width:500px){
+    .activities {
+        font-size: 25px !important;
+    }
+    .headline-name {
+        font-size: 40px !important;
+    }
+    .my-images {
+        margin-left: 0 !important;
+        width: 380px !important;
+        height: 428px !important;
+    }
+    .my-name {
+        margin-left: 0 !important;
+        gap: 10px !important;
+        margin-right: 34px !important;
+         width: 90%;
+        >a{
+            margin-left: 100px;
+        }
+    }
+   .main-container {
+    flex-direction: column;
+    align-items: center;
+   }
+    .headline-left-side{
+        width: 78px !important;
+        height: 45px !important;
+        >span {
+            font-size: 32px !important;
+        }
+    }
+    .curve-images {
+        display: none;
+    }
+    .curve-images-two {
+        display: block !important;
+        top: 450px !important;
+    }
+    .my-email-adress{
+        display: none;
+    }
+    .desing-line {
+        width: 210px !important;
+    }
+}
+
+@media (min-width:500px) and (max-width:600px){
+    .activities {
+        font-size: 30px !important;
+    }
+    .headline-name {
+        font-size: 50px !important;
+    }
+    .my-images {
+        margin-left: 0 !important;
+        width: 490px !important;
+        height: 428px !important;
+    }
+    .my-name {
+        margin-left: 30px;
+        gap: 10px !important;
+        margin-right: 34px;
+         width: 90%;
+        >a{
+            margin-left: 100px;
+        }
+    }
+   .main-container {
+    flex-direction: column;
+    align-items: center;
+   }
+    .headline-left-side{
+        width: 83px !important;
+        height: 45px !important;
+        >span {
+            font-size: 35px !important;
+        }
+    }
+    .curve-images {
+        display: none;
+    }
+    .curve-images-two {
+        display: block !important;
+        top: 388px !important;
+    }
+    .my-email-adress{
+        display: none;
+    }
+    .desing-line {
+        width: 210px !important;
+    }
+}
+
+@media (min-width:600px) and (max-width:700px){
+    .activities {
+        font-size: 33px !important;
+    }
+    .headline-name {
+        font-size: 52px !important;
+    }
+    .my-images {
+        margin-left: 0 !important;
+        width: 490px !important;
+        height: 428px !important;
+    }
+    .my-name {
+        margin-left: 30px;
+        gap: 10px !important;
+        >a{
+            margin-left: 100px;
+        }
+    }
+   .main-container {
+    flex-direction: column;
+    align-items: center;
+   }
+    .headline-left-side{
+        width: 90px !important;
+        height: 57px !important;
+        >span {
+            font-size: 40px !important;
+        }
+    }
+    .curve-images {
+        display: none;
+    }
+    .curve-images-two {
+        display: block !important;
+        top: 388px !important;
+    }
+    .my-email-adress{
+        display: none;
+    }
+    .desing-line {
+        width: 210px !important;
+    }
+}
+@media (min-width:700px) and (max-width:800px){
+    .activities {
+        font-size: 35px !important;
+    }
+    .headline-name {
+        font-size: 54px !important;
+    }
+    .my-images {
+        margin-left: 0 !important;
+        width: 490px !important;
+        height: 428px !important;
+    }
+    .my-name {
+        margin-left: 30px;
+        gap: 10px !important;
+        >a{
+            margin-left: 100px;
+        }
+    }
+   .main-container {
+    flex-direction: column;
+    align-items: center;
+   }
+    .headline-left-side{
+        width: 116px !important;
+        height: 57px !important;
+        >span {
+            font-size: 40px !important;
+        }
+    }
+    .curve-images {
+        display: none;
+    }
+    .curve-images-two {
+        display: block !important;
+        top: 388px !important;
+    }
+    .my-email-adress{
+        display: none;
+    }
+    .desing-line {
+        width: 210px !important;
+    }
+}
+
+@media (min-width:800px) and (max-width:1100px){
+    .activities {
+        font-size: 35px !important;
+    }
+    .headline-name {
+        font-size: 54px !important;
+    }
+    .my-images {
+        margin-left: 0 !important;
+        width: 490px !important;
+        height: 428px !important;
+    }
+    .my-name {
+        margin-left: 30px;
+        gap: 10px !important;
+        >a{
+            margin-left: 100px;
+        }
+    }
+   .main-container {
+    flex-direction: column;
+    align-items: center;
+   }
+    .headline-left-side{
+        width: 116px !important;
+        height: 57px !important;
+        >span {
+            font-size: 40px !important;
+        }
+    }
+    .curve-images {
+        display: none;
+    }
+    .curve-images-two {
+        display: block !important;
+        top: 388px !important;
+    }
+    .my-email-adress{
+        display: none;
+    }
+    .desing-line {
+        width: 270px !important;
+    }
+}
+@media (min-width:1100px) and (max-width:1200px){
+    .activities {
+        font-size: 35px !important;
+    }
+    .headline-name {
+        font-size: 54px !important;
+    }
+    .my-images {
+        margin-left: 0 !important;
+        width: 490px !important;
+        height: 428px !important;
+    }
+    .my-name {
+        margin-left: 30px;
+        gap: 10px !important;
+        >a{
+            margin-left: 100px;
+        }
+    }
+   .main-container {
+    flex-direction: column;
+    align-items: center;
+   }
+    .headline-left-side{
+        width: 116px !important;
+        height: 57px !important;
+        >span {
+            font-size: 40px !important;
+        }
+    }
+    .curve-images {
+        display: none;
+    }
+    .curve-images-two {
+        display: block !important;
+        top: 388px !important;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1300px){
+    .activities {
+        font-size: 35px !important;
+    }
+    .headline-name {
+        font-size: 54px !important;
+    }
+    .my-images {
+        margin-left: 100px !important;
+        width: 490px !important;
+        height: 500px !important;
+    }
+    .my-name {
+        margin-left: 30px;
+    }
+   
+    .headline-left-side{
+        width: 116px !important;
+        height: 57px !important;
+        >span {
+            font-size: 40px !important;
+        }
+    }
+}
+
+
+@media (min-width:1300px) and (max-width:1500px){
+    .activities {
+        font-size: 40px !important;
+    }
+    .headline-name {
+        font-size: 63px !important;
+    }
+    .my-images {
+        margin-left: 100px !important;
+        width: 490px !important;
+    }
+    .my-name {
+        margin-left: 30px;
+    }
+    .headline-left-side{
+
+
+        > span {
+            font-size: 50px !important;
+        }
+    }
+}
+
+@media (min-width:1500px) and (max-width:1700px){
+    .activities {
+        font-size: 40px !important;
+    }
+    .headline-name {
+        font-size: 65px !important;
+    }
+    .my-images {
+        margin-left: 100px !important;
+    }
+}
+
+@media (min-width:1700px) and (max-width:1920px){
+    .activities {
+        font-size: 50px !important;
+    }
+    .headline-name {
+        font-size: 85px !important;
+    }
+    .my-images {
+        margin-left: 250px !important;
+    }
+}

@@ -1,16 +1,20 @@
 
 import { Injectable } from '@angular/core';
 import { Items } from '../models/item.interface.model';
+import { TranslateService } from '@ngx-translate/core';
 
 @Injectable({
   providedIn: 'root',
 })
 
 export class AppDataServiceComponent {
+  constructor( public translate: TranslateService) {
+    // this.translate.setDefaultLang('de');
+  }
   personalInformation = [
     {
       "path" : "gps-normal",
-      "text" : "Flexible in terms of working environments, I can work effectively bothon-site in Munich and remotely."
+      "text" : this.translate.instant('AboutMeLocation')
     },
     {
       "path" : "lamp-normal",
@@ -29,7 +33,7 @@ export class AppDataServiceComponent {
       title: 'ABOUT ME',
     },
     {
-      linkComponent: '#skill',
+      linkComponent: '#skills',
       title: 'SKILLS',
     },
     {
@@ -99,14 +103,6 @@ export class AppDataServiceComponent {
       'description': 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop function, assign users and categories.',
       'imgPath': './assets/img/projects-img/join.png',
       'livetestPath': './join-app/loginpage.html',
-      'githubPath': 'https://github.com/BekirLabjani/el-pollo-loco'
-    },
-    {
-      'name': 'El Pollo Loco2',
-      'languages': 'HTML | CSS | JavaScript',
-      'description': 'portfolio-join-description',
-      'imgPath': './assets/img/projects-img/Pollo loco 1.png',
-      'livetestPath': '',
       'githubPath': 'https://github.com/BekirLabjani/el-pollo-loco'
     },
   ]
