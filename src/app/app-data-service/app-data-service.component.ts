@@ -18,11 +18,11 @@ export class AppDataServiceComponent {
     },
     {
       "path" : "lamp-normal",
-      "text" : "I am open-minded and always looking for personal challenges to constantly improve my knowledge and skills.."
+      "text" : this.translate.instant('AboutMeMindset')
     },
     {
       "path" : "puzzle-normal",
-      "text" : "In my profession, programming isn't just about writing code; it's acreative form of problem-solving. I take pride in my ability to distill complex technical challenges into simple, user-friendly solutions. This way, I help you achieve your goals and bring your visions to life."
+      "text" : this.translate.instant("AboutMeProgramming")
     },
   ]
 
@@ -30,7 +30,7 @@ export class AppDataServiceComponent {
   myContentLinks = [
     {
       linkComponent: '#aboutMe',
-      title: 'ABOUT ME',
+      title: this.translate.instant('AboutMeLink'),
     },
     {
       linkComponent: '#skills',
@@ -88,11 +88,12 @@ export class AppDataServiceComponent {
   // },
 ];
 
+
   myProjects: Items[] = [
     {
       'name': 'El Pollo Loco',
       'languages': 'HTML | CSS | JavaScript',
-      'description': 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
+      'description': this.translate.instant('ElPolloLocoDescription'),
       'imgPath': './assets/img/projects-img/Pollo loco 1.png',
       'livetestPath': './jumprun/index.html',
       'githubPath': 'https://github.com/BekirLabjani/el-pollo-loco'

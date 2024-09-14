@@ -267,17 +267,19 @@ button {
 @media (max-width: 880px) {
     .form-container {
         height: auto;
-        width: auto;
+        width: 80%;
         margin-left: 50px;
         margin-right: 0px;
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .btn-active {
         top: 75px;
     }
-
+    textarea {
+        height: 149px; 
+    }
     .mail-success {
         top: 75px;
         left: 30px;
@@ -288,18 +290,53 @@ button {
         top: 8px;
     }
 }
+@media (max-width: 800px) {
+    .btn-active {
+        top: 75px;
+    }
+    textarea {
+        height: 149px; 
+    }
+    .mail-success {
+        top: 75px;
+        left: 30px;
+    }
 
+    .mail-active {
+        left: 30px;
+        top: 8px;
+    }
+}
+@media (max-width: 700px) {
+    .btn-active {
+        top: 75px;
+    }
+    textarea {
+        height: 149px; 
+    }
+    .mail-success {
+        top: 75px;
+        left: 30px;
+    }
+
+    .mail-active {
+        left: 30px;
+        top: 8px;
+    }
+}
 @media (max-width: 600px) {
     .form-container {
         margin-left: 25px;
     }
 
     textarea {
-        height: 162px;
+        height: 160px;
     }
-
+.btn-container {
+    margin-top: 0;
+}
     button {
-
+    
         &:enabled {
             &:hover {
                 scale: 1.1;

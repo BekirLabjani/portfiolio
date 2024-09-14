@@ -1,6 +1,6 @@
 import { Component, ElementRef, AfterViewInit } from '@angular/core';
 import { AppDataServiceComponent } from '../../app-data-service/app-data-service.component';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 
 @Component({
@@ -14,7 +14,8 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class AboutMeComponent {
   personalInformation = this.appDataService.personalInformation;
-constructor(private appDataService: AppDataServiceComponent,private el: ElementRef){
+constructor(private appDataService: AppDataServiceComponent){
+
 }
 
 }

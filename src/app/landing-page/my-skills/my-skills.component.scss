@@ -554,3 +554,12 @@ color: white;
         margin: 0 auto;
     }
 }
+
+
+@media (min-width: 1921px) {
+    section{
+        max-width: 1920px;
+        max-height: 1440px;
+        margin: 0 auto;
+    }
+}

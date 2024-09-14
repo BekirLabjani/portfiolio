@@ -113,45 +113,122 @@ footer {
     color: white;
     padding: 5px 10px 5px 10px;
     text-decoration: none;
+    cursor: pointer;
 }
 
-@media (max-width: 1245px) {
-    footer {
-        >div {
-            margin: 0 50px 0 50px;
-        }
+@media screen and (min-width: 300px) and (max-width:400px) {
+    .footer-info{
+        flex-direction: column;
+        gap: 10px;
     }
-}
-
-@media (max-width: 650px) {
+    .imprint-container{
+        display: none;
+    }
+    .mobile-imprint {
+        display: block;
+    }
+    .name-logo {
+        font-size: 40px;
+    }
+    .footer-middle{
+        font-size: 17px;
+    }
+    .footer-icon {
+        width: 30px;
+        height: 30px;
+    }
     footer {
         justify-content: center;
     }
+}
 
-    .footer-info {
+
+@media screen and (min-width: 400px) and (max-width:500px) {
+    .footer-info{
         flex-direction: column;
-        gap: 23px;
+        gap: 10px;
     }
-
-    .mobile-imprint {
-        display: flex;
-    }
-
-    .imprint-container {
+    .imprint-container{
         display: none;
+    }
+    .mobile-imprint {
+        display: block;
+    }
+    .name-logo {
+        font-size: 40px;
+    }
+    .footer-middle{
+        font-size: 17px;
+    }
+    .footer-icon {
+        width: 30px;
+        height: 30px;
+    }
+    footer {
+        justify-content: center;
     }
 }
 
-@media (max-width: 600px) {
-    footer {
-        height: 380px;
-
-        >div {
-            margin: 0 25px 0 25px;
-        }
+@media screen and (min-width: 500px) and (max-width:600px) {
+    .footer-info{
+        flex-direction: column;
+        gap: 10px;
     }
+    .imprint-container{
+        display: none;
+    }
+    .mobile-imprint {
+        display: block;
+    }
+    .name-logo {
+        font-size: 40px;
+    }
+}
 
-    .footer-headline {
-        margin-bottom: 55px !important;
+@media screen and (min-width: 600px) and (max-width:700px) {
+    .footer-info{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .imprint-container{
+        display: none;
+    }
+    .mobile-imprint {
+        display: block;
+    }
+    .name-logo {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width:800px) {
+    .footer-info{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .imprint-container{
+        display: none;
+    }
+    .mobile-imprint {
+        display: block;
+    }
+    .name-logo {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width:900px) {
+    .footer-info{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .imprint-container{
+        display: none;
+    }
+    .mobile-imprint {
+        display: block;
+    }
+    .name-logo {
+        font-size: 40px;
     }
 }

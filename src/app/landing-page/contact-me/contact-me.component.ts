@@ -6,7 +6,9 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
   standalone: true,
   imports: [ContactFormComponent],
   templateUrl: './contact-me.component.html',
-  styleUrl: './contact-me.component.scss'
+  styleUrls: [
+    './contact-me-responsiv.component.scss', './contact-me.component.scss'
+  ]
 })
 export class ContactMeComponent {
 
