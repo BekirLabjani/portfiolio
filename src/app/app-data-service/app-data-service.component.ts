@@ -34,11 +34,11 @@ export class AppDataServiceComponent {
     },
     {
       linkComponent: '#skills',
-      title: 'SKILLS',
+      title: this.translate.instant('SkillsLink'),
     },
     {
       linkComponent: '#contact',
-      title: 'CONTACT',
+      title: this.translate.instant('ContactLink'),
     }
   ];
 
@@ -101,10 +101,10 @@ export class AppDataServiceComponent {
     {
       'name': 'Join',
       'languages': 'HTML | CSS | JavaScript',
-      'description': 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop function, assign users and categories.',
+      'description': this.translate.instant('JoinDescription'),
       'imgPath': './assets/img/projects-img/join.png',
       'livetestPath': './join-app/loginpage.html',
-      'githubPath': 'https://github.com/BekirLabjani/el-pollo-loco'
+      'githubPath': 'https://github.com/BekirLabjani/Join-App'
     },
-  ]
+  ];
 }

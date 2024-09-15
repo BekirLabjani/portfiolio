@@ -33,7 +33,7 @@
       (click)="setActiveLink(i)"
     >
       <a [href]="menu.linkComponent" class="my-links">
-        {{ menu.title }}
+        {{ menu.title | translate}}
       </a>
       <div *ngIf="activeLinkIndex === i" class="purpel-line-active"></div>
     </div>

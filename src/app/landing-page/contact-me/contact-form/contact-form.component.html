@@ -7,14 +7,14 @@
         [class.is-valid]="name.valid && name.touched" 
         [class.is-invalid]="!name.valid && name.touched"
         class="form-input"
-        placeholder="Your Name"
+        placeholder="{{'ContactNamePlaceholder' | translate}}"
         name="name"
         id="name"
         [(ngModel)]="contactData.name"
         required
         />
         @if(!name.valid && name.touched){
-        <span class="error-message">Your name is required </span>
+        <span class="error-message">{{'ContactNameError' | translate}} </span>
         }
       </div>
       <div>
@@ -23,14 +23,14 @@
         [class.is-valid]="email.valid && email.touched" 
         [class.is-invalid]="!email.valid && email.touched"
           class="form-input"
-          placeholder="Your Mail"
+          placeholder="{{'ContactEmailPlaceholder' | translate}}"
           name="email"
           id="email"
           [(ngModel)]="contactData.email"
           required
         />
         @if(!email.valid && email.touched){
-        <span class="error-message">Your mail is required </span>
+        <span class="error-message">{{'ContactEmailError' | translate}} </span>
         }
       </div>
       <div>
@@ -38,7 +38,7 @@
         #message="ngModel" 
         [class.is-valid]="message.valid && message.touched" 
         [class.is-invalid]="!message.valid && message.touched"
-          placeholder="Your Message"
+          placeholder="{{'ContactMessagePlaceholder' | translate}}"
           id="message"
           name="message"
           [(ngModel)]="contactData.message"
@@ -46,7 +46,7 @@
           required
         ></textarea>
         @if(!message.valid && message.touched && !message.disabled){
-        <span class="error-message-textarea">Your message is required</span>
+        <span class="error-message-textarea">{{'ContactMessageError' | translate}}</span>
         }
       </div>
     </div>
@@ -55,13 +55,13 @@
             <div class="custom-checkbox">
                 <input #checkbox="ngModel" [ngModelOptions]="{standalone: true}" type="checkbox" id="checkbox"
                     [(ngModel)]="isChecked">
-                <label for="checkbox">I've read the<a routerLink="/privacy-policy"
-                        routerLinkActive="active" ariaCurrentWhenActive="page" class='purple-text'>privacy policy</a>and agree to the processing of my data as outlined.</label>
+                <label for="checkbox">{{'ContactPrivacyText1' | translate}}<a 
+                  target="_blank" (click)="openPriv($event)" class='purple-text'>{{'ContactPrivacyLink' | translate}}</a>{{'ContactPrivacyText2' | translate}}</label>
             </div>
         </div>
         <div class="btn-container">
-            <button type="submit" disabled [disabled]="!isChecked || contactForm.invalid">Send Message :)</button>
-            <span id="msgSuccess" class="mail-success">Successful</span>
+            <button type="submit" disabled [disabled]="!isChecked || contactForm.invalid">{{'ContactSubmitButton' | translate}}</button>
+            <span id="msgSuccess" class="mail-success">{{'ContactSubmitButtonSucc' | translate}}</span>
         </div>
     </div>
   </form>

@@ -13,7 +13,7 @@ section {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 571px;
+    width: 50%;
     gap: 57px;
 }
 .my-skills-right{
@@ -161,9 +161,15 @@ section {
     font-size: 16px;
     font-weight: 400;
     text-align: right;
+    display: flex;
+    justify-content: end;
 }
 .colores {
     color: white;
+}
+.purpel-text{
+    color: #9747ff;
+    padding-inline: 5px
 }
 .purple-line{
     margin-top: 70px;
@@ -202,7 +208,16 @@ section {
         cursor: pointer;
     }
 }
-
+.skill-headline-two {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: right;
+    color: white;
+    display: flex;
+    justify-content: end;
+    padding-top: 10px;
+}
 .hover-div {
     /* Mobile styles */
     display: block;

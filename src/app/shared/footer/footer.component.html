@@ -2,13 +2,15 @@
     <div>
         <div class="footer-info">
             <div class="logo-container">
-                <div class="name-logo">
-                  <span class="letter">B</span>
-                  <span class="letter">e</span>
-                  <span class="letter">k</span>
-                  <span>i</span>
-                  <span class="letter special">r</span>
-                </div>
+           <a href="#strPage">
+            <div class="name-logo">
+                <span class="letter">B</span>
+                <span class="letter">e</span>
+                <span class="letter">k</span>
+                <span>i</span>
+                <span class="letter special">r</span>
+              </div>
+           </a>
               </div>
             <p class="footer-middle">© Bekir Labjani 2024</p>
             <div class="footer-icon-container">
@@ -18,11 +20,10 @@
                 <a href="https://www.linkedin.com/in/bekir-labjani-5203b1261/" target="_blank"><img
                         class="footer-icon" src="./assets/img/icons/lnkedin.png" alt="linkedIn"></a>
             </div>
-            <a class="mobile-imprint"  (click)="openImp($event)">Impressum</a>
-            <div  class="blue-line"></div>
+            <a class="mobile-imprint" target="_blank" (click)="openImp($event)">Impressum</a>
         </div>
         <div class="imprint-container">
-            <a (click)="openImp($event)" class="imprint" href="#">Impressum</a>
+            <a (click)="openImp($event)" target="_blank" class="imprint" href="#">Impressum</a>
             <div  class="blue-line"></div>
         </div>
     </div>

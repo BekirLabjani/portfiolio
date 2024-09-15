@@ -1,9 +1,9 @@
 <section>
-    <div>
+    <div class="blueprints-info">
         <div class="project-description">
             <h3>{{ projectDataMir.name }}</h3>
             <h4>{{ projectDataMir.languages }}</h4>
-            <p>{{ projectDataMir.description }}</p>
+            <p>{{ projectDataMir.description | translate}}</p>
         </div>
         <div class="project-btns-container">
             <a href="{{ projectDataMir.livetestPath }}" target="_blank" class="test-btn">Live Test</a>

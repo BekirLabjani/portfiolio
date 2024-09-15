@@ -36,21 +36,18 @@ export class HeaderComponent {
   }
 
   switchLanguage(language: string) {
-    console.log('funkktt');
+  
     
     this.translate.use(language); // Fixed method
     switch (language) {
       case "en":
         this.isInactive = false;
         this.isInactive1 = true;
-        console.log(this.isInactive);
-        console.log(this.isInactive1);
+
         break;
       case "de": // Fixed language code
         this.isInactive = true;
         this.isInactive1 = false;
-        console.log(this.isInactive);
-        console.log(this.isInactive1);
         break;
     }
   }

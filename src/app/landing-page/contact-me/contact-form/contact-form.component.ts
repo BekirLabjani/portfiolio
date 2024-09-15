@@ -3,6 +3,9 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-contact-form',
@@ -13,6 +16,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
     RouterLink,
     RouterLinkActive,
     RouterOutlet,
+    TranslateModule
   ],
   templateUrl: './contact-form.component.html',
   styleUrls: ['./contact-form.component.scss'],  
@@ -24,7 +28,7 @@ export class ContactFormComponent {
     email: '',
     message: '',
   };
-
+constructor(private router: Router) {}
   isChecked: boolean = false;
 
   post = {
@@ -68,5 +72,11 @@ export class ContactFormComponent {
       document.querySelector('button[type="submit"]')?.classList.remove('btn-active');
       document.getElementById('msgSuccess')?.classList.remove('mail-active');
     }, 2000);
+  }
+
+  openPriv(event : Event){
+    event.preventDefault();
+    this.router.navigateByUrl('/privacy-policy/');
+
   }
 }

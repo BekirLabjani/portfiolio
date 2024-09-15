@@ -1,5 +1,7 @@
 {
-    "AboutMeLink": "I am",
+  "headline": "",
+   
+    "AboutMeLink": "About me",
     "SkillsLink": "Skills",
     "PortfolioLink": "Portfolio",
     "ContactLink": "Contact",
@@ -27,7 +29,8 @@
   
     "MySkillsTitle": "My skills",
     "SkillsDescription": "I have gained experience in building projects with different frontend technologies and concepts.",
-    "LookingForSkill": "Looking for another skill?",
+    "LookingForSkill": "Looking for",
+    "LookingForSkills": "another skill",
     "ContactMeDescription": "Feel free to contact me, I look forward to expanding on my previous knowledge.",
     "GetInTouchButton": "Get in touch",
     "ContinuallyLearningText": "Continually learning",
@@ -42,7 +45,7 @@
     "JoinImageAlt": "Laptop, der das Join-Projekt anzeigt",
     "JoinTitle": "Join",
     "JoinTechnologies": "JavaScript | HTML | CSS",
-    "JoinDescription": "Task-Manager inspiriert vom Kanban-System.",
+    "JoinDescription": "Task manager inspired by the Kanban System.",
     "LiveTestButton": "Live-Test",
     "GithubButton": "Github",
   
@@ -66,6 +69,7 @@
     "ContactPrivacyText2": "and agree to the processing of my data as outlined.",
     "ContactCheckboxError": "Please accept the privacy policy",
     "ContactSubmitButton": "Send message :)",
+    "ContactSubmitButtonSucc": "Successful :)",
     "ArrowUpAlt": "Arrow Up",
     "ContactShadowAlt": "Shadow",
     "ContactDescription2Bold": "Contact me!",

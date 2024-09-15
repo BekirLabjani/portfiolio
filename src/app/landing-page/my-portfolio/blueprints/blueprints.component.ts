@@ -11,7 +11,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './blueprints.component.scss'
 })
 export class BlueprintsComponent {
-  constructor(private el: ElementRef,private translate : TranslateService){
+  constructor(private el: ElementRef){
   }
   @Input() projectData: Items = {
     'name': '',

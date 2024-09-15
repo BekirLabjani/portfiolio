@@ -63,7 +63,13 @@ footer {
     height: 2px;
     border: none;
 }
-
+.blue-line-two{
+    
+    width: 58px;
+    height: 2px;
+    border: none; 
+    display: none;
+}
 .hidden {
     visibility: hidden;
 }
@@ -114,6 +120,9 @@ footer {
     padding: 5px 10px 5px 10px;
     text-decoration: none;
     cursor: pointer;
+    &:hover{
+        text-decoration: underline  #1CDAE6;
+    }
 }
 
 @media screen and (min-width: 300px) and (max-width:400px) {
@@ -230,5 +239,8 @@ footer {
     }
     .name-logo {
         font-size: 40px;
+    }
+    .blue-line-two{
+        display: block !important;
     }
 }

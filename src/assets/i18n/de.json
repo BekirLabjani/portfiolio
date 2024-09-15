@@ -1,4 +1,6 @@
-{
+ {
+  "headline": "",
+   
     "AboutMeLink": "Über mich",
     "SkillsLink": "Fähigkeiten",
     "PortfolioLink": "Portfolio",
@@ -8,7 +10,9 @@
     "Aboutme": "Über mich",
     "Skills": "Fähigkeiten",
     "Portfolio": "Portfolio",
-  
+    
+    "startPage": "",
+
     "Iam": "Ich bin",
     "Profession": "FRONTEND ENTWICKLER",
     "LetsTalk": "Lass uns reden",
@@ -18,6 +22,8 @@
     "Scroll": "Scrollen",
     "Down": "",
   
+    "about-me": "",
+
     "AboutMeTitle": "Über mich",
     "AboutMeIntro": "Hallo, ich bin ein deutschsprachiger Frontend-Entwickler aus Graz. Motiviert durch die unbegrenzten Möglichkeiten in der IT freue ich mich darauf, visuell ansprechende und intuitive Websites und Anwendungen zu gestalten.",
     "AboutMeLocation": "Flexibel in Bezug auf Arbeitsumgebungen kann ich sowohl vor Ort in Dortmund als auch remote effektiv arbeiten.",
@@ -25,9 +31,12 @@
     "AboutMeProgramming": "In meinem Beruf geht es beim Programmieren nicht nur um das Schreiben von Code, sondern es ist eine kreative Form der Problemlösung. Ich bin stolz auf meine Fähigkeit, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen zu überführen. So helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Vision zum Leben zu erwecken.",
     "AboutMePhotoAlt": "Foto von Bekir Labjani",
   
+    "my-skills": "",
+
     "MySkillsTitle": "Meine Fähigkeiten",
     "SkillsDescription": "Ich habe Erfahrung im Aufbau von Projekten mit verschiedenen Frontend-Technologien und -Konzepten gesammelt.",
-    "LookingForSkill": "Auf der Suche nach einer weiteren Fähigkeit?",
+    "LookingForSkill": "Auf der Suche nach",
+    "LookingForSkills": "eine andere Fähigkeit?",
     "ContactMeDescription": "Zögern Sie nicht, mich zu kontaktieren, ich freue mich darauf, mein Wissen zu erweitern.",
     "GetInTouchButton": "Kontakt aufnehmen",
     "ContinuallyLearningText": "Ständig lernen",
@@ -54,7 +63,8 @@
     "ContactHeader": "Kontakt",
     "ContactProblemHeader": "Haben Sie ein Problem zu lösen?",
     "ContactDescription1": "Kontaktieren Sie mich über dieses Formular. Ich bin interessiert, von Ihnen zu hören, Ihre Ideen zu erfahren und zu Ihren Projekten mit meiner Arbeit beizutragen.",
-    "ContactDescription2": "Brauchen Sie einen Frontend-Entwickler? Kontaktieren Sie mich!",
+    "ContactDescription2": "Brauchen Sie einen Frontend-Entwickler? ",
+    "ContactDescription3": "Kontaktieren Sie mich!",
     "ContactNamePlaceholder": "Ihr Name",
     "ContactNameError": "Ihr Name wird benötigt",
     "ContactEmailPlaceholder": "Ihre E-Mail",
@@ -66,6 +76,7 @@
     "ContactPrivacyText2": "gelesen und stimme der Verarbeitung meiner Daten gemäß den Richtlinien zu.",
     "ContactCheckboxError": "Bitte akzeptieren Sie die Datenschutzrichtlinie",
     "ContactSubmitButton": "Nachricht senden :)",
+    "ContactSubmitButtonSucc": "Erfolgreich :)",
     "ArrowUpAlt": "Pfeil nach oben",
     "ContactShadowAlt": "Schatten",
     "ContactDescription2Bold": "Kontaktieren Sie mich!",
