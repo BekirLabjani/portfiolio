@@ -37,7 +37,21 @@ import { FooterComponent } from '../shared/footer/footer.component';
   styleUrl: './landing-page.component.scss',
   
 })
-export class LandingPageComponent {
+export class LandingPageComponent implements AfterViewInit{
 
- 
+  constructor(private el: ElementRef) {
+  }
+  
+  ngAfterViewInit() {
+    const sections = this.el.nativeElement.querySelectorAll('.fade-section'); // Elemente mit .fade-section überwachen
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in'); // Klasse hinzufügen, um Animation zu triggern
+        }
+      });
+    });
+
+    sections.forEach((section: Element) => observer.observe(section));
+  }
 }

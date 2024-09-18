@@ -327,7 +327,7 @@ button {
 }
 @media (max-width: 600px) {
     .form-container {
-        margin-left: 25px;
+            margin: auto;
     }
 
     textarea {
@@ -344,5 +344,33 @@ button {
             }
         }
 
+    }
+}
+@media (max-width: 320px) {
+    .form-container {
+            margin: auto;
+    }
+
+    textarea {
+        height: 160px;
+    }
+.btn-container {
+    margin-top: 0;
+}
+    button {
+    
+        &:enabled {
+            &:hover {
+                scale: 1.1;
+            }
+        }
+
+    }
+    button[_ngcontent-ng-c3316405116] {
+        height: 80%;
+        max-width: 83%;
+        min-width: 73%;
+        /* padding: 15px 30px 15px 30px; */
+ 
     }
 }

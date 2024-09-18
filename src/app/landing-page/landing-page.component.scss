@@ -13,7 +13,9 @@
         width: 100%; 
 }
 
-
+.fade-section {
+    transform: translateX(-400%);
+}
 .green-line{
     background-color: #70e61c;
     width: 267px;

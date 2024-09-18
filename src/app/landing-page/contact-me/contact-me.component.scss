@@ -15,7 +15,9 @@ section {
     left: 0;
     transform: 1;
     z-index: -1;
+    top: 454%;
 }
+
 
 .background-shadow-contact-two {
     position: absolute;
@@ -30,7 +32,7 @@ section {
     display: flex;
 align-content: center;
 gap: 20px;
-width: 764px;
+width: 677px;
 }
 .contact-container {
     display: flex;
@@ -96,5 +98,16 @@ a {
     }
 }
 
+.fade-section {
+    opacity: 0;
+    transform: translateX(+100%);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .fade-in {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
 
 

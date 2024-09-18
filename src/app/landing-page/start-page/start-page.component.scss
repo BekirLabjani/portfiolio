@@ -131,6 +131,18 @@ button {
     z-index: 4;
 }
 
+
+.fade-section {
+    opacity: 0;
+    transform: translateX(+100%);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .fade-in {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
 // @media (min-width: 1560px) and (max-width: 1300px) {
 //     .headline-right-side {
 //         border: solid 1px;
