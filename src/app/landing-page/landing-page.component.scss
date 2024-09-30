@@ -6,7 +6,12 @@
     z-index: -1;
 }
 
-
+#skill {
+    scroll-margin-top: 150px; /* Passe diesen Wert an, je nach Größe deines Headers */
+  }
+#contact {
+    scroll-margin-top: 200px; /* Passe diesen Wert an, je nach Größe deines Headers */
+  }
 #contact {
     display: flex;
     justify-content: center;
