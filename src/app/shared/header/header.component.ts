@@ -24,6 +24,8 @@ export class HeaderComponent {
   }
   
   ngOnInit() {
+    const savedLanguage = localStorage.getItem('language') || 'en';
+    this.translate.use(savedLanguage);
     this.closeBurgerMenuOnClick();
   }
 
@@ -36,16 +38,14 @@ export class HeaderComponent {
   }
 
   switchLanguage(language: string) {
-  
-    
-    this.translate.use(language); // Fixed method
+    this.translate.use(language);
+    localStorage.setItem('language', language); // Speichere die Sprache im lokalen Speicher
     switch (language) {
-      case "en":
+      case 'en':
         this.isInactive = false;
         this.isInactive1 = true;
-
         break;
-      case "de": // Fixed language code
+      case 'de':
         this.isInactive = true;
         this.isInactive1 = false;
         break;
@@ -55,4 +55,6 @@ export class HeaderComponent {
   closeBurgerMenuOnClick() {
     this.isMenuOpen = !this.isMenuOpen;
   }
+ 
+  
 }

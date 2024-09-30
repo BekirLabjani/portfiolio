@@ -15,6 +15,9 @@ section {
     background-color: #141d2f;
     font-family: 'Poppins';
 }
+.logo-link {
+    text-decoration: none;
+}
 .logo-container {
     display: flex;
     align-items: center;
@@ -87,7 +90,7 @@ section {
 
 .mobile-screen-menu
     {
-        background-color: #141d2fcc;
+        background-color: rgb(20 29 47 / 95%);
         height: 100vh;
         width: 100%;
         position: fixed;

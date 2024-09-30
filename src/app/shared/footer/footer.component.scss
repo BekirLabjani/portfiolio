@@ -9,6 +9,7 @@ footer {
     align-items: center;
     position: relative;
     z-index: 1;
+    margin-top: 50px;
 
     >div {
         margin-left: 100px;
@@ -33,6 +34,9 @@ footer {
             cursor: pointer;
         }
     }
+}
+.logo-link {
+    text-decoration: none;
 }
 .name-logo {
     font-family: 'Arial', sans-serif;

@@ -194,3 +194,33 @@ a {
         padding-bottom: 0;
     }
 }
+
+@media screen and (min-width: 900px) and (max-width: 1000px) { 
+
+    .project-btns-container {
+        display: flex;
+        gap: 28px;
+
+        >a{
+            font-size: 15px;
+        }
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1170px) { 
+
+    .project-btns-container {
+        display: flex;
+        gap: 28px;
+
+        >a{
+            font-size: 19px;
+        }
+    }
+}
+@media screen and (min-width: 1170px) and (max-width: 1250px) { 
+
+    .project-btns-container {
+        display: flex;
+        gap: 28px;
+    }
+}

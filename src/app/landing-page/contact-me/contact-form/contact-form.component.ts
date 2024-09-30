@@ -73,7 +73,12 @@ constructor(private router: Router) {}
       document.getElementById('msgSuccess')?.classList.remove('mail-active');
     }, 2000);
   }
-
+  handleClick(event: Event) {
+    event.preventDefault(); // Optional, falls du das Standardverhalten unterdrücken möchtest
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scrollt nach oben
+    this.openPriv(event); // Führt die ursprüngliche openPriv() Funktion aus
+  }
+  
   openPriv(event : Event){
     event.preventDefault();
     this.router.navigateByUrl('/privacy-policy/');

@@ -30,11 +30,12 @@
 //   .fade-in {
 //     opacity: 1;
 //   }
-// @media screen and  (min-width: 1920px){
+@media screen and  (min-width: 1920px){
 
-//     .app-content {
-//         margin: 0 auto;
-//     max-width: 1920px;
-//     overflow-x: hidden;
-//     }
-// }
+    .app-content {
+        margin: 0 auto;
+    max-width: 1920px;
+    overflow-x: hidden;
+    }
+
+}

@@ -56,7 +56,7 @@
                 <input #checkbox="ngModel" [ngModelOptions]="{standalone: true}" type="checkbox" id="checkbox"
                     [(ngModel)]="isChecked">
                 <label for="checkbox">{{'ContactPrivacyText1' | translate}}<a 
-                  target="_blank" (click)="openPriv($event)" class='purple-text'>{{'ContactPrivacyLink' | translate}}</a>{{'ContactPrivacyText2' | translate}}</label>
+                  target="_blank" (click)="handleClick($event)"class='purple-text'>{{'ContactPrivacyLink' | translate}}</a>{{'ContactPrivacyText2' | translate}}</label>
             </div>
         </div>
         <div class="btn-container">

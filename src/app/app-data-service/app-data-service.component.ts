@@ -33,7 +33,7 @@ export class AppDataServiceComponent {
       title: this.translate.instant('AboutMeLink'),
     },
     {
-      linkComponent: '#skills',
+      linkComponent: '#skill',
       title: this.translate.instant('SkillsLink'),
     },
     {

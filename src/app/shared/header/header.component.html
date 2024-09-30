@@ -1,12 +1,14 @@
 <section>
   <div class="logo-container">
-    <div class="name-logo">
-      <span class="letter">B</span>
-      <span class="letter">e</span>
-      <span class="letter">k</span>
-      <span>i</span>
-      <span class="letter special">r</span>
-    </div>
+<a href="#strPage" class="logo-link">
+  <div class="name-logo">
+    <span class="letter">B</span>
+    <span class="letter">e</span>
+    <span class="letter">k</span>
+    <span>i</span>
+    <span class="letter special">r</span>
+  </div>
+</a>
   </div>
   <button class="translate-button">
     <img (click)="switchLanguage('en')" [ngClass]="{'inactivate': isInactive}"  class="language-icon-en"
@@ -47,7 +49,7 @@
     <div class="mobile-screen-menu" [ngClass]="{ open: isMenuOpen }">
       <div>
         <a (click)="closeBurgerMenuOnClick()" href="#aboutMe">About me</a>
-        <a (click)="closeBurgerMenuOnClick()" href="#skills">My skills</a>
+        <a (click)="closeBurgerMenuOnClick()" href="#skill">My skills</a>
         <a (click)="closeBurgerMenuOnClick()" href="#portfolio">Portfolio</a>
         <a (click)="closeBurgerMenuOnClick()" href="#contact">Contact</a>
       </div>
