@@ -19,7 +19,7 @@ section {
 .my-skills-right{
     display: flex;
     gap: 42px;
-
+    padding-left: 50px;
     >div {
         >p {
             margin: 0;
@@ -90,6 +90,7 @@ section {
 }
 .icons {
     position: relative; /* Um das hover-div relativ zum .icons-Container zu positionieren */
+
 
     > img {
         height: 120px;
@@ -230,7 +231,15 @@ section {
     padding-top: 10px;
 }
 .hover-div {
-    /* Mobile styles */
+    position: relative;
+    padding-right: 123px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    align-items: center;
+    width: 88px;
+    padding-bottom: 54px;
     display: block;
 }
 
@@ -579,6 +588,11 @@ color: white;
     .skills-flex-row {
         width: 100%;
         justify-content: center;
+    }
+}
+@media screen and (min-width: 1270px) and (max-width: 1350px) { 
+    .my-skills-headline {
+        font-size: 76px !important;
     }
 }
 @media (min-width: 1921px) {

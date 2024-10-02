@@ -14,6 +14,8 @@ section {
     align-items: center;
     background-color: #141d2f;
     font-family: 'Poppins';
+    max-width: 1920px;
+
 }
 .logo-link {
     text-decoration: none;
@@ -216,7 +218,9 @@ section {
    .menu-links {
     margin-right: 60px;
    }
-  
+   .logo-container{
+    width: 289px;
+}
 
 }
 

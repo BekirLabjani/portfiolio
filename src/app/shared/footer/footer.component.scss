@@ -9,8 +9,9 @@ footer {
     align-items: center;
     position: relative;
     z-index: 1;
-    margin-top: 50px;
 
+    max-width: 1920px;
+    margin: 50px auto;
     >div {
         margin-left: 100px;
         margin-right: 100px;
