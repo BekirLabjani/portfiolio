@@ -3,9 +3,32 @@
     margin: 0;
     padding: 0;
 }
-html{
-  scroll-behavior: smooth;
+/* Für Webkit-Browser (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 6px; /* Sehr schmaler Scrollbalken */
 }
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Unsichtbarer Hintergrund des Scrollbereichs */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(136, 136, 136, 0.2); /* Sehr dezenter, transparenter Balken */
+  border-radius: 6px; /* Leichte Rundung */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(136, 136, 136, 0.5); /* Etwas sichtbarer beim Hover */
+}
+
+/* Für Firefox */
+html {
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  scrollbar-color: rgba(136, 136, 136, 0.2) transparent;
+}
+
+
 body {
   margin: 0;
   font-family: 'Poppins';

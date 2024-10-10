@@ -13,7 +13,7 @@ import {
   imports: [TranslateModule],
   templateUrl: './start-page.component.html',
   styleUrls: [
-    './start-page-responsiv.scss','./start-page.component.scss' // Responsives Stylesheet
+    './start-page-responsiv.scss','./start-page.component.scss','start-page-responsiv-height.scss' // Responsives Stylesheet
   ],
   animations: [
     trigger('flyInOut', [

@@ -7,11 +7,11 @@ footer {
     border-top: 4px solid #70E61C;
     display: flex;
     align-items: center;
-    position: relative;
     z-index: 1;
-
+    min-width: 100%;
     max-width: 1920px;
-    margin: 50px auto;
+    margin-top: 50px;
+    justify-content: center;
     >div {
         margin-left: 100px;
         margin-right: 100px;
@@ -24,7 +24,7 @@ footer {
 .imprint-container {
     position: relative;
     color: white;
-    width: 100%;
+    width: 50%;
     font-size: 20px;
     margin-left: 44px;
     >a {
@@ -248,4 +248,15 @@ footer {
     .blue-line-two{
         display: block !important;
     }
+}
+
+@media (min-width: 1921px) {
+ 
+footer {
+
+    >div {
+   
+        width: 68%;
+    }
+}
 }

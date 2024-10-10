@@ -10,23 +10,23 @@
     scroll-margin-top: 150px; /* Passe diesen Wert an, je nach Größe deines Headers */
   }
 #contact {
-    scroll-margin-top: 200px; /* Passe diesen Wert an, je nach Größe deines Headers */
+    scroll-margin-top:140px; /* Passe diesen Wert an, je nach Größe deines Headers */
   }
-#contact {
-    display: flex;
-    justify-content: center;
-        width: 100%; 
-}
+// #contact {
+//     display: flex;
+//     justify-content: center;
+//         width: 100%; 
+// }
 
-.fade-section {
-    transform: translateX(-400%);
-}
-.green-line{
-    background-color: #70e61c;
-    width: 267px;
-    height: 4px;
-    border: none;
-}
+// .fade-section {
+//     transform: translateX(-400%);
+// }
+// .green-line{
+//     background-color: #70e61c;
+//     width: 267px;
+//     height: 4px;
+//     border: none;
+// }
 // .fade-section {
 //     opacity: 0;
 //     transition: opacity 2s ease-in;
@@ -35,12 +35,12 @@
 //   .fade-in {
 //     opacity: 1;
 //   }
-@media screen and  (min-width: 1921px){
+// @media screen and  (min-width: 1921px){
 
-    .app-content {
-        margin: 0 auto;
-    max-width: 1920px;
-    overflow-x: hidden;
-    }
+//     .app-content {
+//         margin: 0 auto;
+//     max-width: 1920px;
+//     overflow-x: hidden;
+//     }
 
-}
+// }

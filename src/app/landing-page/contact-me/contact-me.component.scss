@@ -38,6 +38,8 @@ width: 580px;
     display: flex;
     gap: 150px;
     color: white;
+    justify-content: space-between;
+    width: 75%;
 
     >div {
         display: flex;

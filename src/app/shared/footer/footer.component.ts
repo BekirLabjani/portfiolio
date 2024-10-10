@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 import { ImprintComponent } from '../imprint/imprint.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports:[ImprintComponent],
+  imports:[ImprintComponent, TranslateModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
@@ -16,6 +17,6 @@ export class FooterComponent {
 
   openImp(event: Event) {
     event.preventDefault();
-    this.router.navigateByUrl('/imprint/');
+    this.router.navigateByUrl('/imprint');
   }
 }

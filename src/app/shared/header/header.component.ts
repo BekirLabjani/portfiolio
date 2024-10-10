@@ -9,7 +9,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   standalone: true,
   imports: [CommonModule, RouterLink, TranslateModule],
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss'] // Fixed typo
+  styleUrls: ['./header.component.scss','header.component-responsiv.scss'] // Fixed typo
 })
 export class HeaderComponent {
   myContentLinks = this.appDataService.myContentLinks; // Correct variable name

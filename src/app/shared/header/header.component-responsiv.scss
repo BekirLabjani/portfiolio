@@ -1,0 +1,100 @@
+
+@media screen and (min-width: 300px) and (max-width: 400px) { 
+    .menu-links {
+     display: none;
+    }
+    .burger-menu {
+     display: block;
+     margin-right: 40px;
+    }
+ .name-logo {
+     padding-inline: 0;
+     margin-left: 20px;
+ }
+ .burger-menu{
+     margin-right: 10px;
+ }
+ }
+ @media screen and (min-width: 400px) and (max-width: 500px) { 
+    .menu-links {
+     display: none;
+    }
+    .burger-menu {
+     display: block;
+     margin-right: 40px;
+    }
+    .name-logo {
+     margin-left: 40px;
+     padding-inline: 0;
+    }
+    .translate-button {
+        margin-right: 70px;
+    }
+    .name-logo {
+        width: 150px;
+        margin-left: 20px;
+    }
+ 
+ }
+ @media screen and (min-width: 500px) and (max-width: 600px) { 
+    .menu-links {
+     display: none;
+    }
+    .burger-menu {
+     display: block;
+     margin-right: 40px;
+    }
+ 
+ }
+ @media screen and (min-width: 600px) and (max-width: 700px) { 
+    .menu-links {
+     display: none;
+    }
+    .burger-menu {
+     display: block;
+     margin-right: 40px;
+    }
+ 
+ }
+ @media screen and (min-width: 700px) and (max-width: 800px) { 
+    .menu-links {
+     display: none;
+    }
+    .burger-menu {
+     display: block;
+     margin-right: 40px;
+    }
+ 
+ }
+ @media screen and (min-width: 800px) and (max-width: 900px) { 
+    .menu-links {
+     margin-right: 50px;
+    }
+    .logo-container{
+     width: 289px;
+ }
+ 
+ }
+ 
+ @media screen and  (min-width: 900px) and (max-width: 1000px){
+    .menu-links {
+        margin-right: 20px;
+       }
+     .section {
+         margin: 0 auto;
+     max-width: 1920px;
+     overflow-x: hidden;
+     }
+     .logo-container {
+        width: 300px;
+     }
+ }
+
+ @media screen and  (min-width: 1920px){
+ 
+     .section {
+         margin: 0 auto;
+     max-width: 1920px;
+     overflow-x: hidden;
+     }
+ }

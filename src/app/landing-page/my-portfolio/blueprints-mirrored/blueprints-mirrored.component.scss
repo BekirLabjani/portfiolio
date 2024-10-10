@@ -116,6 +116,12 @@ a {
         >img {
             max-width: 400px;
         }
+        .project-btns-container {
+            gap: 40px;
+            >a {
+                font-size: 19px;
+            }
+        }
     }
     .portfolio-headline-container {
         padding-bottom: 0;

@@ -81,7 +81,7 @@ constructor(private router: Router) {}
   
   openPriv(event : Event){
     event.preventDefault();
-    this.router.navigateByUrl('/privacy-policy/');
+    this.router.navigateByUrl('/privacy-policy');
 
   }
 }

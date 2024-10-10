@@ -1,0 +1,30 @@
+@media screen and (min-height: 765px) and (max-height: 830px) {
+    .buttom-links {
+       bottom: 160px;
+    }
+}
+@media screen and (min-height: 710px) and (max-height: 788px) {
+    .curve-images-two {
+        top: 406px !important;
+    }
+    .my-images {
+        height: 376px !important;
+    }
+    .buttom-links {
+        bottom: 160px;
+     }
+}
+@media screen and (min-height: 645px) and (max-height: 734px) {
+    .curve-images-two {
+        top: 375px !important;
+    }
+    .my-images {
+    
+        height: 335px !important;
+    }
+    .my-name {
+  
+        gap: 22px !important;
+  
+    }
+}

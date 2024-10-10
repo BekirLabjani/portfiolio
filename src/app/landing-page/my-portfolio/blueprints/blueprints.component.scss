@@ -127,6 +127,12 @@ a {
     .portfolio-headline-container {
         padding-bottom: 0;
     }
+    .project-btns-container {
+        gap: 40px;
+        >a {
+            font-size: 19px;
+        }
+    }
 }
 @media screen and (min-width: 500px) and (max-width: 600px) { 
 
@@ -135,6 +141,8 @@ a {
         height: 700px;
         >div {
             align-items:center ;
+            width: 90%;
+
         }
         >img {
             max-width: 400px;

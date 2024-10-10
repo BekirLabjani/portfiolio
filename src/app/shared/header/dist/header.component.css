@@ -14,6 +14,11 @@ section {
   align-items: center;
   background-color: #141d2f;
   font-family: "Poppins";
+  max-width: 1920px;
+}
+
+.logo-link {
+  text-decoration: none;
 }
 
 .logo-container {
@@ -87,7 +92,7 @@ section {
 }
 
 .mobile-screen-menu {
-  background-color: #141d2fcc;
+  background-color: rgba(20, 29, 47, 0.95);
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -122,6 +127,29 @@ section {
 
 .mobile-screen-menu.open {
   right: 0;
+}
+
+.translate-button {
+  width: 80px;
+  border-radius: 25px;
+  height: 30px;
+  border: unset;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.translate-button > img {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.inactivate {
+  background-color: #141d2f;
+  border: 4px solid #141D2F;
 }
 
 @media screen and (min-width: 300px) and (max-width: 400px) {
@@ -191,6 +219,10 @@ section {
 @media screen and (min-width: 800px) and (max-width: 900px) {
   .menu-links {
     margin-right: 60px;
+  }
+
+  .logo-container {
+    width: 289px;
   }
 }
 @media screen and (min-width: 1920px) {
