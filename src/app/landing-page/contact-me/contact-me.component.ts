@@ -16,30 +16,45 @@ import {
   styleUrls: [
     './contact-me-responsiv.component.scss', './contact-me.component.scss'
   ],
-  animations: [
-    trigger('flyInOut', [
-      state('in', style({ transform: 'translateX(0)' })),
-      transition('void => *', [style({ transform: 'translateX(-100%)' }), animate(100)]),
-      transition('* => void', [animate(100, style({ transform: 'translateX(100%)' }))]),
-    ]),
-  ],
+  // animations: [
+  //   trigger('flyInOut', [
+  //     state('in', style({ transform: 'translateX(0)' })),
+  //     transition('void => *', [style({ transform: 'translateX(-100%)' }), animate(100)]),
+  //     transition('* => void', [animate(100, style({ transform: 'translateX(100%)' }))]),
+  //   ]),
+  // ],
 })
-export class ContactMeComponent implements AfterViewInit  {
+export class ContactMeComponent  {
   constructor(private el: ElementRef){
 
   }
 
-  ngAfterViewInit() {
-    const sections = this.el.nativeElement.querySelectorAll('.fade-section'); // Elemente mit .fade-section überwachen
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('fade-in'); // Klasse hinzufügen, um Animation zu triggern
-        }
-      });
-    });
+  // ngAfterViewInit() {
+  //   const sections = this.el.nativeElement.querySelectorAll('.fade-section'); // Elemente mit .fade-section überwachen
+  //   const observer = new IntersectionObserver((entries) => {
+  //     entries.forEach(entry => {
+  //       if (entry.isIntersecting) {
+  //         entry.target.classList.remove('d-none'); // Klasse hinzufügen, um Animation zu triggern
+  //         entry.target.classList.add('d-flex'); // Klasse hinzufügen, um Animation zu triggern
+  //         entry.target.classList.add('fade-in'); // Klasse hinzufügen, um Animation zu triggern
+
+  //       }
+  //     });
+  //   });
   
-    sections.forEach((section: Element) => observer.observe(section));
-  }
+//     sections.forEach((section: Element) => observer.observe(section));
+
+//   //   const sectionsTwo = this.el.nativeElement.querySelectorAll('.d-none');
+//   //   const observerTwo = new IntersectionObserver((entries) => {
+//   //     entries.forEach(entry => {
+//   //       if (entry.isIntersecting) {
+//   //         entry.target.classList.add('d-flex'); // Klasse hinzufügen, um Animation zu triggern
+//   //       }
+//   //     });
+//   //   });
   
+//   //   sections.forEach((section: Element) => observer.observe(section));
+//   // }
+  
+// }
 }

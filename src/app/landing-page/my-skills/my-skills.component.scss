@@ -306,7 +306,7 @@ color: white;
       width: 100%;
     }
     .my-skills-headline {
-        font-size: 40px;
+        font-size: 22px;
     }
     .icon-box{
         padding-right: 13px;
@@ -334,8 +334,9 @@ color: white;
         align-items: end;
     }
   .mobile-version-headline {
-    font-size: 21px;
+    font-size: 16px;
 }
+
 }
 @media screen and (min-height: 740px)and (max-height: 760px) {
  section {
@@ -397,6 +398,12 @@ color: white;
     .buttom-links {
         width: 80%;
     }
+    .my-skills-headline {
+        font-size: 33px;
+    }
+    .mobile-version-headline  {
+        font-size: 16px;
+    }
 }
 @media screen and (min-width: 500px) and (max-width: 600px) { 
     section {
@@ -418,7 +425,7 @@ color: white;
         
     }
     .my-skills-headline {
-        font-size: 70px;
+        font-size: 38px;
     }
     .purple-line {
         margin-top: 57px;
@@ -434,6 +441,9 @@ color: white;
     .contact-container {
         display: none;
     }
+.mobile-version-headline  {
+    font-size: 18px;
+}
     .my-skills-right {
     
         >div {
@@ -456,7 +466,7 @@ color: white;
     .mobile-version-button {
         display: flex;
         justify-content: center;
-        width: 200px;
+        width: 280px;
     }
     .mobile-version-container {
         display: flex;
@@ -474,6 +484,9 @@ color: white;
         padding-right: 60px;
         width: 90px;
     }
+    .name-logo {
+        margin-left: 0 !important;
+    }
     .contact-container {
         display: none;
     }
@@ -488,6 +501,12 @@ color: white;
     .skills {
         width: 460px;
     }
+    .my-skills-headline {
+        font-size: 40px !important;
+      }
+      .mobile-version-headline {
+        font-size: 17px !important;
+      }
 }
 
 @media screen and (min-width: 700px) and (max-width: 800px) { 
@@ -499,7 +518,7 @@ color: white;
     .mobile-version-button {
         display: flex;
         justify-content: center;
-        width: 200px;
+        width: 280px;
     }
     .mobile-version-container {
         display: flex;
@@ -529,6 +548,12 @@ color: white;
     .skills {
         width: 600px;
     }
+  .my-skills-headline {
+    font-size: 50px !important;
+  }
+  .mobile-version-headline {
+    font-size: 21px !important;
+  }  
 }
 @media screen and (min-width: 800px) and (max-width: 900px) { 
     section {
@@ -566,6 +591,15 @@ color: white;
             gap: 40px;
         }
     }
+    .skills{
+        width: 558px !important;
+    }
+    .my-skills-headline {
+        font-size: 58px !important;
+    }
+    .purple-line {
+        margin-top: 47px !important;
+    }
 }
 
 @media screen and (min-width: 900px) and (max-width: 1000px) { 
@@ -582,16 +616,48 @@ color: white;
     .skill-headline-two {
         font-size: 19px;
     }
+    section {
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+        padding-left: 0 !important;
+    }
+    .mobile-version-button {
+        display: flex;
+        justify-content: center;
+        width: 280px;
+    }
+    .mobile-version-container {
+        display: flex;
+    }
+    .mobile-skills-version {
+        display: flex;
+        
+    }
+    .contact-container {
+        display: none;
+    }
+    .my-skills-headline{
+        font-size: 80px !important;
+    }
 }
 @media screen and (min-width: 1000px) and (max-width: 1160px) { 
     .skills {
-        width: 540px;
+        width: 424px;
     }
     .skills-flex-row {
         width: 100%;
     }
     .skill-headline-two {
         font-size: 22px;
+    }
+    .my-skills-headline{
+        font-size: 56px;
+        font-weight: 700;
+        text-align: right;
+    }
+    .my-skills-right{
+        padding-left: 0 !important;
     }
 }
 @media screen and (min-width: 1160px) and (max-width: 1270px) { 
@@ -602,17 +668,33 @@ color: white;
         width: 100%;
         justify-content: center;
     }
+    .my-skills-headline {
+        font-size: 48px !important;
+    }
+    .skill-headline-two {
+        font-size: 18px !important;
+    }
+    .icon-box {
+        padding-right: 81px !important;
+    }
 }
 @media screen and (min-width: 1270px) and (max-width: 1350px) { 
     .my-skills-headline {
-        font-size: 76px !important;
+        font-size: 48px !important;
+    }
+    .skills-flex-row {
+        width: 100%;
+    }
+    .skill-headline-two {
+        font-size: 18px !important;
     }
 }
-@media (min-width: 1921px) {
-    section {
-        max-width: 1920px;
-        max-height: 1440px;
-        margin: 0 auto;
+@media screen and (min-width: 1350px) and (max-width: 1500px) { 
+    .my-skills-headline {
+        font-size: 76px !important;
+    }
+    .skills-flex-row {
+        width: 100%;
     }
 }
 
@@ -621,6 +703,19 @@ color: white;
     section{
         max-width: 1920px;
         max-height: 1440px;
-        margin: 0 auto;
+        margin: auto;
+        padding-left: 0 !important;
     }
+    .skills{
+        margin-left: 180px !important;
+        margin-right: 100px;
+    }
+    .contact-container {
+        margin-right: 141px;
+    }
+    .purple-line{
+        width: 66px !important;
+        margin-right: 14px !important;
+    }
+
 }

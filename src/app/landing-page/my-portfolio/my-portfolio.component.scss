@@ -188,6 +188,8 @@ h1 {
     }
     .project-container {
         gap: 40px;
+        // margin-left: 155px !important;
+        // margin-right: 155px !important;
     }
 
 
@@ -197,5 +199,11 @@ h1 {
     }
     .purple-line-short {
         width: 100%;
+        margin-left: 23% !important;
+
     }
+    .purple-line-long {
+        width: 77% !important;
+    }
+    
 }

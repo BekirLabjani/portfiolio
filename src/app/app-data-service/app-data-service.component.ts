@@ -103,7 +103,7 @@ export class AppDataServiceComponent {
       'languages': 'HTML | CSS | JavaScript',
       'description': this.translate.instant('JoinDescription'),
       'imgPath': './assets/img/projects-img/join.png',
-      'livetestPath': './join-app/loginpage.html',
+      'livetestPath': './cleaning-webside/index.html',
       'githubPath': 'https://github.com/BekirLabjani/Join-App'
     },
   ];

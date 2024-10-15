@@ -25,10 +25,10 @@
     align-items: center;
    }
     .headline-left-side{
-        width: 64px !important;
-        height: 45px !important;
+        width: 60px !important;
+        height: 21px !important;
         >span {
-            font-size: 27px !important;
+            font-size: 17px !important;
         }
     }
     .curve-images {
@@ -81,7 +81,7 @@
         width: 78px !important;
         height: 45px !important;
         >span {
-            font-size: 32px !important;
+            font-size: 23px !important;
         }
     }
     .curve-images {
@@ -128,10 +128,10 @@
     align-items: center;
    }
     .headline-left-side{
-        width: 83px !important;
-        height: 45px !important;
+        width: 98px !important;
+        height: 36px !important;
         >span {
-            font-size: 35px !important;
+            font-size: 29px !important;
         }
     }
     .curve-images {
@@ -173,10 +173,10 @@
     align-items: center;
    }
     .headline-left-side{
-        width: 90px !important;
-        height: 57px !important;
+        width: 98px !important;
+        height: 36px !important;
         >span {
-            font-size: 40px !important;
+            font-size: 29px !important;
         }
     }
     .curve-images {
@@ -217,10 +217,10 @@
     align-items: center;
    }
     .headline-left-side{
-        width: 116px !important;
-        height: 57px !important;
+        width: 98px !important;
+        height: 36px !important;
         >span {
-            font-size: 40px !important;
+            font-size: 29px !important;
         }
     }
     .curve-images {
@@ -262,10 +262,10 @@
     align-items: center;
    }
     .headline-left-side{
-        width: 146px !important;
-        height: 62px !important;
+        width: 98px !important;
+        height: 36px !important;
         >span {
-            font-size: 40px !important;
+            font-size: 29px !important;
         }
     }
     .curve-images {
@@ -306,10 +306,10 @@
     align-items: center;
    }
     .headline-left-side{
-        width: 116px !important;
-        height: 57px !important;
+        width: 98px !important;
+        height: 36px !important;
         >span {
-            font-size: 40px !important;
+            font-size: 29px !important;
         }
     }
     .curve-images {
@@ -323,7 +323,7 @@
 
 @media (min-width:1200px) and (max-width:1300px){
     .activities {
-        font-size: 35px !important;
+        font-size: 31px !important;
     }
     .headline-name {
         font-size: 54px !important;
@@ -338,10 +338,10 @@
     }
    
     .headline-left-side{
-        width: 116px !important;
-        height: 57px !important;
+        width: 95px !important;
+        height: 43px !important;
         >span {
-            font-size: 40px !important;
+            font-size: 27px !important;
         }
     }
 }
@@ -349,10 +349,10 @@
 
 @media (min-width:1300px) and (max-width:1500px){
     .activities {
-        font-size: 40px !important;
+        font-size: 32px !important;
     }
     .headline-name {
-        font-size: 63px !important;
+        font-size: 53px !important;
     }
     .my-images {
         margin-left: 100px !important;
@@ -361,14 +361,15 @@
     .my-name {
         margin-left: 30px;
     }
-    .headline-left-side[_ngcontent-ng-c4082952836] {
+    .headline-left-side {
         transform: rotate(-90deg);
-        width: 123px;
-        height: 71px;
-        >span {
-            font-size: 50px !important;
+        width: 117px !important;
+        height: 43px !important;
+        >span{
+            font-size: 34px !important;
         }
     }
+
 }
 
 @media (min-width:1500px) and (max-width:1700px){
@@ -381,30 +382,31 @@
     .my-images {
         margin-left: 100px !important;
     }
-    .headline-left-side[_ngcontent-ng-c4082952836] {
-        transform: rotate(-90deg);
-        width: 103px;
-        height: 71px;
-        >span {
-            font-size: 45px;
+    .headline-left-side {
+        width: 140px !important;
+        height: 66px !important;
+        > span{
+            font-size: 40px !important;
         }
     }
 }
 
 @media (min-width:1700px) and (max-width:1920px){
     .activities {
-        font-size: 48px !important;
+        font-size: 40px !important;
     }
     .headline-name {
-        font-size: 78px !important;
+        font-size: 71px !important;
     }
     .my-images {
         margin-left: 250px !important;
     }
-    .headline-left-side[_ngcontent-ng-c4082952836] {
-        transform: rotate(-90deg);
-        width: 151px;
-        height: 119px;
+    .headline-left-side {
+        width: 154px !important;
+        height: 63px !important;
+    > span{
+            font-size: 40px !important;
+        }
     }
 }
 @media (min-width: 1921px) {
@@ -415,10 +417,24 @@
     .main-container {
         justify-content: center !important ;
     }
-    // .my-images {
-    //     width: 722px;
-    //     height: 1326px;
-    //     margin-left: 47px;
-    //     position: relative;
-    // }
+    .buttom-links {
+        margin: auto;
+        bottom: 60px !important;
+        .links {  
+            margin: auto !important;
+            max-width: 1920px !important;
+            position: static !important;
+            padding-bottom: 10%;
+            padding-left: 500px;
+        }
+    }
+    .curve-images {
+    display: none;
+
+    }
+    .curve-images-two {
+    display: flex !important;
+    top: 300px !important;
+    }
+    
 }
